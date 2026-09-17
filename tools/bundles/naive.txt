@@ -1,0 +1,6 @@
+# "Attach the folder and let it work it out."
+# This is what most people send on the first try.
+meridian/*.py
+data/*.json
+docs/*.md
+tests/*.py

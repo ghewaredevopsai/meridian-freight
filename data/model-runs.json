@@ -1,0 +1,731 @@
+{
+  "provenance": {
+    "status": "SYNTHETIC - illustrative reference data, not a recorded measurement",
+    "why": "It exists so the lab can run offline, on a locked-down seat, and give every room the same numbers to reason about. The shapes are plausible and the conclusions it supports are ones the trainer has seen, but no row here is an observation.",
+    "before_you_quote_it": "Replace this file with your own recorded runs before presenting any number from it as evidence. The lab text says the same thing.",
+    "sample_size": "4 runs per task type per archetype, 72 rows. Thin on purpose: ask the room how confident four runs makes them.",
+    "columns": "wall_seconds and approx_credits are per run; tests_passed and diff_kept are the outcome of that single run."
+  },
+  "runs": [
+    {
+      "run": "R-001",
+      "task_type": "explain-code",
+      "archetype": "fast",
+      "wall_seconds": 11,
+      "tests_passed": true,
+      "files_touched": 1,
+      "approx_credits": 0.39,
+      "diff_kept": true
+    },
+    {
+      "run": "R-002",
+      "task_type": "explain-code",
+      "archetype": "fast",
+      "wall_seconds": 10,
+      "tests_passed": true,
+      "files_touched": 1,
+      "approx_credits": 0.37,
+      "diff_kept": true
+    },
+    {
+      "run": "R-003",
+      "task_type": "explain-code",
+      "archetype": "fast",
+      "wall_seconds": 10,
+      "tests_passed": true,
+      "files_touched": 1,
+      "approx_credits": 0.34,
+      "diff_kept": false
+    },
+    {
+      "run": "R-004",
+      "task_type": "explain-code",
+      "archetype": "fast",
+      "wall_seconds": 11,
+      "tests_passed": true,
+      "files_touched": 3,
+      "approx_credits": 0.42,
+      "diff_kept": true
+    },
+    {
+      "run": "R-005",
+      "task_type": "explain-code",
+      "archetype": "default",
+      "wall_seconds": 19,
+      "tests_passed": true,
+      "files_touched": 2,
+      "approx_credits": 1.21,
+      "diff_kept": true
+    },
+    {
+      "run": "R-006",
+      "task_type": "explain-code",
+      "archetype": "default",
+      "wall_seconds": 18,
+      "tests_passed": true,
+      "files_touched": 1,
+      "approx_credits": 0.98,
+      "diff_kept": true
+    },
+    {
+      "run": "R-007",
+      "task_type": "explain-code",
+      "archetype": "default",
+      "wall_seconds": 17,
+      "tests_passed": true,
+      "files_touched": 1,
+      "approx_credits": 1.14,
+      "diff_kept": true
+    },
+    {
+      "run": "R-008",
+      "task_type": "explain-code",
+      "archetype": "default",
+      "wall_seconds": 18,
+      "tests_passed": true,
+      "files_touched": 1,
+      "approx_credits": 1.01,
+      "diff_kept": true
+    },
+    {
+      "run": "R-009",
+      "task_type": "explain-code",
+      "archetype": "reasoning",
+      "wall_seconds": 40,
+      "tests_passed": true,
+      "files_touched": 1,
+      "approx_credits": 6.25,
+      "diff_kept": true
+    },
+    {
+      "run": "R-010",
+      "task_type": "explain-code",
+      "archetype": "reasoning",
+      "wall_seconds": 43,
+      "tests_passed": true,
+      "files_touched": 1,
+      "approx_credits": 7.01,
+      "diff_kept": true
+    },
+    {
+      "run": "R-011",
+      "task_type": "explain-code",
+      "archetype": "reasoning",
+      "wall_seconds": 60,
+      "tests_passed": true,
+      "files_touched": 1,
+      "approx_credits": 6.4,
+      "diff_kept": true
+    },
+    {
+      "run": "R-012",
+      "task_type": "explain-code",
+      "archetype": "reasoning",
+      "wall_seconds": 34,
+      "tests_passed": true,
+      "files_touched": 1,
+      "approx_credits": 5.8,
+      "diff_kept": true
+    },
+    {
+      "run": "R-013",
+      "task_type": "write-docstring",
+      "archetype": "fast",
+      "wall_seconds": 10,
+      "tests_passed": true,
+      "files_touched": 3,
+      "approx_credits": 0.29,
+      "diff_kept": true
+    },
+    {
+      "run": "R-014",
+      "task_type": "write-docstring",
+      "archetype": "fast",
+      "wall_seconds": 8,
+      "tests_passed": true,
+      "files_touched": 1,
+      "approx_credits": 0.19,
+      "diff_kept": true
+    },
+    {
+      "run": "R-015",
+      "task_type": "write-docstring",
+      "archetype": "fast",
+      "wall_seconds": 6,
+      "tests_passed": true,
+      "files_touched": 1,
+      "approx_credits": 0.31,
+      "diff_kept": true
+    },
+    {
+      "run": "R-016",
+      "task_type": "write-docstring",
+      "archetype": "fast",
+      "wall_seconds": 6,
+      "tests_passed": true,
+      "files_touched": 1,
+      "approx_credits": 0.3,
+      "diff_kept": true
+    },
+    {
+      "run": "R-017",
+      "task_type": "write-docstring",
+      "archetype": "default",
+      "wall_seconds": 13,
+      "tests_passed": true,
+      "files_touched": 2,
+      "approx_credits": 0.74,
+      "diff_kept": true
+    },
+    {
+      "run": "R-018",
+      "task_type": "write-docstring",
+      "archetype": "default",
+      "wall_seconds": 16,
+      "tests_passed": true,
+      "files_touched": 1,
+      "approx_credits": 1.03,
+      "diff_kept": true
+    },
+    {
+      "run": "R-019",
+      "task_type": "write-docstring",
+      "archetype": "default",
+      "wall_seconds": 17,
+      "tests_passed": true,
+      "files_touched": 1,
+      "approx_credits": 0.87,
+      "diff_kept": false
+    },
+    {
+      "run": "R-020",
+      "task_type": "write-docstring",
+      "archetype": "default",
+      "wall_seconds": 11,
+      "tests_passed": true,
+      "files_touched": 1,
+      "approx_credits": 1.13,
+      "diff_kept": false
+    },
+    {
+      "run": "R-021",
+      "task_type": "write-docstring",
+      "archetype": "reasoning",
+      "wall_seconds": 37,
+      "tests_passed": true,
+      "files_touched": 1,
+      "approx_credits": 5.69,
+      "diff_kept": true
+    },
+    {
+      "run": "R-022",
+      "task_type": "write-docstring",
+      "archetype": "reasoning",
+      "wall_seconds": 42,
+      "tests_passed": true,
+      "files_touched": 1,
+      "approx_credits": 5.59,
+      "diff_kept": true
+    },
+    {
+      "run": "R-023",
+      "task_type": "write-docstring",
+      "archetype": "reasoning",
+      "wall_seconds": 39,
+      "tests_passed": true,
+      "files_touched": 1,
+      "approx_credits": 5.63,
+      "diff_kept": true
+    },
+    {
+      "run": "R-024",
+      "task_type": "write-docstring",
+      "archetype": "reasoning",
+      "wall_seconds": 42,
+      "tests_passed": true,
+      "files_touched": 1,
+      "approx_credits": 5.54,
+      "diff_kept": true
+    },
+    {
+      "run": "R-025",
+      "task_type": "mechanical-rename",
+      "archetype": "fast",
+      "wall_seconds": 10,
+      "tests_passed": true,
+      "files_touched": 2,
+      "approx_credits": 0.48,
+      "diff_kept": true
+    },
+    {
+      "run": "R-026",
+      "task_type": "mechanical-rename",
+      "archetype": "fast",
+      "wall_seconds": 11,
+      "tests_passed": true,
+      "files_touched": 3,
+      "approx_credits": 0.38,
+      "diff_kept": false
+    },
+    {
+      "run": "R-027",
+      "task_type": "mechanical-rename",
+      "archetype": "fast",
+      "wall_seconds": 12,
+      "tests_passed": true,
+      "files_touched": 2,
+      "approx_credits": 0.52,
+      "diff_kept": true
+    },
+    {
+      "run": "R-028",
+      "task_type": "mechanical-rename",
+      "archetype": "fast",
+      "wall_seconds": 12,
+      "tests_passed": true,
+      "files_touched": 2,
+      "approx_credits": 0.54,
+      "diff_kept": true
+    },
+    {
+      "run": "R-029",
+      "task_type": "mechanical-rename",
+      "archetype": "default",
+      "wall_seconds": 20,
+      "tests_passed": true,
+      "files_touched": 2,
+      "approx_credits": 1.36,
+      "diff_kept": true
+    },
+    {
+      "run": "R-030",
+      "task_type": "mechanical-rename",
+      "archetype": "default",
+      "wall_seconds": 15,
+      "tests_passed": true,
+      "files_touched": 1,
+      "approx_credits": 1.03,
+      "diff_kept": true
+    },
+    {
+      "run": "R-031",
+      "task_type": "mechanical-rename",
+      "archetype": "default",
+      "wall_seconds": 24,
+      "tests_passed": true,
+      "files_touched": 4,
+      "approx_credits": 1.01,
+      "diff_kept": true
+    },
+    {
+      "run": "R-032",
+      "task_type": "mechanical-rename",
+      "archetype": "default",
+      "wall_seconds": 26,
+      "tests_passed": true,
+      "files_touched": 3,
+      "approx_credits": 1.48,
+      "diff_kept": true
+    },
+    {
+      "run": "R-033",
+      "task_type": "mechanical-rename",
+      "archetype": "reasoning",
+      "wall_seconds": 45,
+      "tests_passed": true,
+      "files_touched": 4,
+      "approx_credits": 7.91,
+      "diff_kept": true
+    },
+    {
+      "run": "R-034",
+      "task_type": "mechanical-rename",
+      "archetype": "reasoning",
+      "wall_seconds": 71,
+      "tests_passed": true,
+      "files_touched": 3,
+      "approx_credits": 7.52,
+      "diff_kept": true
+    },
+    {
+      "run": "R-035",
+      "task_type": "mechanical-rename",
+      "archetype": "reasoning",
+      "wall_seconds": 68,
+      "tests_passed": true,
+      "files_touched": 3,
+      "approx_credits": 7.78,
+      "diff_kept": true
+    },
+    {
+      "run": "R-036",
+      "task_type": "mechanical-rename",
+      "archetype": "reasoning",
+      "wall_seconds": 57,
+      "tests_passed": true,
+      "files_touched": 3,
+      "approx_credits": 6.9,
+      "diff_kept": false
+    },
+    {
+      "run": "R-037",
+      "task_type": "write-unit-test",
+      "archetype": "fast",
+      "wall_seconds": 15,
+      "tests_passed": false,
+      "files_touched": 1,
+      "approx_credits": 0.61,
+      "diff_kept": false
+    },
+    {
+      "run": "R-038",
+      "task_type": "write-unit-test",
+      "archetype": "fast",
+      "wall_seconds": 22,
+      "tests_passed": true,
+      "files_touched": 1,
+      "approx_credits": 0.64,
+      "diff_kept": false
+    },
+    {
+      "run": "R-039",
+      "task_type": "write-unit-test",
+      "archetype": "fast",
+      "wall_seconds": 19,
+      "tests_passed": true,
+      "files_touched": 2,
+      "approx_credits": 0.73,
+      "diff_kept": false
+    },
+    {
+      "run": "R-040",
+      "task_type": "write-unit-test",
+      "archetype": "fast",
+      "wall_seconds": 16,
+      "tests_passed": false,
+      "files_touched": 1,
+      "approx_credits": 0.68,
+      "diff_kept": false
+    },
+    {
+      "run": "R-041",
+      "task_type": "write-unit-test",
+      "archetype": "default",
+      "wall_seconds": 27,
+      "tests_passed": true,
+      "files_touched": 1,
+      "approx_credits": 1.68,
+      "diff_kept": true
+    },
+    {
+      "run": "R-042",
+      "task_type": "write-unit-test",
+      "archetype": "default",
+      "wall_seconds": 27,
+      "tests_passed": true,
+      "files_touched": 2,
+      "approx_credits": 1.5,
+      "diff_kept": true
+    },
+    {
+      "run": "R-043",
+      "task_type": "write-unit-test",
+      "archetype": "default",
+      "wall_seconds": 40,
+      "tests_passed": true,
+      "files_touched": 1,
+      "approx_credits": 1.6,
+      "diff_kept": false
+    },
+    {
+      "run": "R-044",
+      "task_type": "write-unit-test",
+      "archetype": "default",
+      "wall_seconds": 37,
+      "tests_passed": true,
+      "files_touched": 2,
+      "approx_credits": 1.66,
+      "diff_kept": true
+    },
+    {
+      "run": "R-045",
+      "task_type": "write-unit-test",
+      "archetype": "reasoning",
+      "wall_seconds": 53,
+      "tests_passed": true,
+      "files_touched": 1,
+      "approx_credits": 8.57,
+      "diff_kept": true
+    },
+    {
+      "run": "R-046",
+      "task_type": "write-unit-test",
+      "archetype": "reasoning",
+      "wall_seconds": 67,
+      "tests_passed": true,
+      "files_touched": 1,
+      "approx_credits": 8.58,
+      "diff_kept": true
+    },
+    {
+      "run": "R-047",
+      "task_type": "write-unit-test",
+      "archetype": "reasoning",
+      "wall_seconds": 84,
+      "tests_passed": true,
+      "files_touched": 1,
+      "approx_credits": 7.99,
+      "diff_kept": true
+    },
+    {
+      "run": "R-048",
+      "task_type": "write-unit-test",
+      "archetype": "reasoning",
+      "wall_seconds": 72,
+      "tests_passed": true,
+      "files_touched": 2,
+      "approx_credits": 8.97,
+      "diff_kept": false
+    },
+    {
+      "run": "R-049",
+      "task_type": "find-subtle-bug",
+      "archetype": "fast",
+      "wall_seconds": 14,
+      "tests_passed": false,
+      "files_touched": 2,
+      "approx_credits": 0.73,
+      "diff_kept": false
+    },
+    {
+      "run": "R-050",
+      "task_type": "find-subtle-bug",
+      "archetype": "fast",
+      "wall_seconds": 14,
+      "tests_passed": true,
+      "files_touched": 1,
+      "approx_credits": 0.5,
+      "diff_kept": false
+    },
+    {
+      "run": "R-051",
+      "task_type": "find-subtle-bug",
+      "archetype": "fast",
+      "wall_seconds": 17,
+      "tests_passed": false,
+      "files_touched": 1,
+      "approx_credits": 0.59,
+      "diff_kept": false
+    },
+    {
+      "run": "R-052",
+      "task_type": "find-subtle-bug",
+      "archetype": "fast",
+      "wall_seconds": 9,
+      "tests_passed": false,
+      "files_touched": 1,
+      "approx_credits": 0.5,
+      "diff_kept": true
+    },
+    {
+      "run": "R-053",
+      "task_type": "find-subtle-bug",
+      "archetype": "default",
+      "wall_seconds": 23,
+      "tests_passed": false,
+      "files_touched": 1,
+      "approx_credits": 1.88,
+      "diff_kept": true
+    },
+    {
+      "run": "R-054",
+      "task_type": "find-subtle-bug",
+      "archetype": "default",
+      "wall_seconds": 38,
+      "tests_passed": true,
+      "files_touched": 2,
+      "approx_credits": 1.63,
+      "diff_kept": true
+    },
+    {
+      "run": "R-055",
+      "task_type": "find-subtle-bug",
+      "archetype": "default",
+      "wall_seconds": 33,
+      "tests_passed": false,
+      "files_touched": 2,
+      "approx_credits": 1.61,
+      "diff_kept": true
+    },
+    {
+      "run": "R-056",
+      "task_type": "find-subtle-bug",
+      "archetype": "default",
+      "wall_seconds": 37,
+      "tests_passed": true,
+      "files_touched": 1,
+      "approx_credits": 1.61,
+      "diff_kept": false
+    },
+    {
+      "run": "R-057",
+      "task_type": "find-subtle-bug",
+      "archetype": "reasoning",
+      "wall_seconds": 97,
+      "tests_passed": true,
+      "files_touched": 2,
+      "approx_credits": 9.88,
+      "diff_kept": true
+    },
+    {
+      "run": "R-058",
+      "task_type": "find-subtle-bug",
+      "archetype": "reasoning",
+      "wall_seconds": 63,
+      "tests_passed": true,
+      "files_touched": 1,
+      "approx_credits": 7.89,
+      "diff_kept": true
+    },
+    {
+      "run": "R-059",
+      "task_type": "find-subtle-bug",
+      "archetype": "reasoning",
+      "wall_seconds": 65,
+      "tests_passed": true,
+      "files_touched": 2,
+      "approx_credits": 11.41,
+      "diff_kept": true
+    },
+    {
+      "run": "R-060",
+      "task_type": "find-subtle-bug",
+      "archetype": "reasoning",
+      "wall_seconds": 85,
+      "tests_passed": true,
+      "files_touched": 1,
+      "approx_credits": 8.85,
+      "diff_kept": true
+    },
+    {
+      "run": "R-061",
+      "task_type": "multi-file-feature",
+      "archetype": "fast",
+      "wall_seconds": 25,
+      "tests_passed": false,
+      "files_touched": 2,
+      "approx_credits": 1.03,
+      "diff_kept": false
+    },
+    {
+      "run": "R-062",
+      "task_type": "multi-file-feature",
+      "archetype": "fast",
+      "wall_seconds": 22,
+      "tests_passed": false,
+      "files_touched": 3,
+      "approx_credits": 1.07,
+      "diff_kept": false
+    },
+    {
+      "run": "R-063",
+      "task_type": "multi-file-feature",
+      "archetype": "fast",
+      "wall_seconds": 21,
+      "tests_passed": false,
+      "files_touched": 3,
+      "approx_credits": 1.0,
+      "diff_kept": true
+    },
+    {
+      "run": "R-064",
+      "task_type": "multi-file-feature",
+      "archetype": "fast",
+      "wall_seconds": 26,
+      "tests_passed": false,
+      "files_touched": 5,
+      "approx_credits": 1.19,
+      "diff_kept": false
+    },
+    {
+      "run": "R-065",
+      "task_type": "multi-file-feature",
+      "archetype": "default",
+      "wall_seconds": 35,
+      "tests_passed": false,
+      "files_touched": 3,
+      "approx_credits": 2.87,
+      "diff_kept": true
+    },
+    {
+      "run": "R-066",
+      "task_type": "multi-file-feature",
+      "archetype": "default",
+      "wall_seconds": 60,
+      "tests_passed": true,
+      "files_touched": 5,
+      "approx_credits": 3.19,
+      "diff_kept": true
+    },
+    {
+      "run": "R-067",
+      "task_type": "multi-file-feature",
+      "archetype": "default",
+      "wall_seconds": 36,
+      "tests_passed": false,
+      "files_touched": 5,
+      "approx_credits": 2.36,
+      "diff_kept": false
+    },
+    {
+      "run": "R-068",
+      "task_type": "multi-file-feature",
+      "archetype": "default",
+      "wall_seconds": 61,
+      "tests_passed": true,
+      "files_touched": 5,
+      "approx_credits": 3.18,
+      "diff_kept": true
+    },
+    {
+      "run": "R-069",
+      "task_type": "multi-file-feature",
+      "archetype": "reasoning",
+      "wall_seconds": 88,
+      "tests_passed": true,
+      "files_touched": 2,
+      "approx_credits": 10.32,
+      "diff_kept": true
+    },
+    {
+      "run": "R-070",
+      "task_type": "multi-file-feature",
+      "archetype": "reasoning",
+      "wall_seconds": 124,
+      "tests_passed": true,
+      "files_touched": 4,
+      "approx_credits": 10.81,
+      "diff_kept": true
+    },
+    {
+      "run": "R-071",
+      "task_type": "multi-file-feature",
+      "archetype": "reasoning",
+      "wall_seconds": 99,
+      "tests_passed": true,
+      "files_touched": 4,
+      "approx_credits": 13.39,
+      "diff_kept": true
+    },
+    {
+      "run": "R-072",
+      "task_type": "multi-file-feature",
+      "archetype": "reasoning",
+      "wall_seconds": 82,
+      "tests_passed": true,
+      "files_touched": 3,
+      "approx_credits": 13.2,
+      "diff_kept": true
+    }
+  ]
+}

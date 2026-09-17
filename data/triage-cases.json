@@ -1,0 +1,144 @@
+{
+  "cases": [
+    {
+      "id": "T-001",
+      "text_tokens": 480,
+      "true_answer": "MF-03",
+      "cheap_answer": "MF-03",
+      "cheap_confidence": 0.8
+    },
+    {
+      "id": "T-002",
+      "text_tokens": 320,
+      "true_answer": "MF-02",
+      "cheap_answer": "MF-02",
+      "cheap_confidence": 0.93
+    },
+    {
+      "id": "T-003",
+      "text_tokens": 480,
+      "true_answer": "MF-03",
+      "cheap_answer": "MF-05",
+      "cheap_confidence": 0.57
+    },
+    {
+      "id": "T-004",
+      "text_tokens": 820,
+      "true_answer": "MF-02",
+      "cheap_answer": "MF-02",
+      "cheap_confidence": 0.86
+    },
+    {
+      "id": "T-005",
+      "text_tokens": 210,
+      "true_answer": "MF-01",
+      "cheap_answer": "MF-01",
+      "cheap_confidence": 0.93
+    },
+    {
+      "id": "T-006",
+      "text_tokens": 420,
+      "true_answer": "MF-04",
+      "cheap_answer": "MF-02",
+      "cheap_confidence": 0.52
+    },
+    {
+      "id": "T-007",
+      "text_tokens": 670,
+      "true_answer": "MF-05",
+      "cheap_answer": "MF-05",
+      "cheap_confidence": 0.97
+    },
+    {
+      "id": "T-008",
+      "text_tokens": 330,
+      "true_answer": "MF-02",
+      "cheap_answer": "MF-02",
+      "cheap_confidence": 0.8
+    },
+    {
+      "id": "T-009",
+      "text_tokens": 860,
+      "true_answer": "MF-01",
+      "cheap_answer": "MF-06",
+      "cheap_confidence": 0.52
+    },
+    {
+      "id": "T-010",
+      "text_tokens": 420,
+      "true_answer": "MF-04",
+      "cheap_answer": "MF-04",
+      "cheap_confidence": 0.77
+    },
+    {
+      "id": "T-011",
+      "text_tokens": 430,
+      "true_answer": "MF-01",
+      "cheap_answer": "MF-01",
+      "cheap_confidence": 0.74
+    },
+    {
+      "id": "T-012",
+      "text_tokens": 860,
+      "true_answer": "MF-06",
+      "cheap_answer": "MF-05",
+      "cheap_confidence": 0.55
+    },
+    {
+      "id": "T-013",
+      "text_tokens": 450,
+      "true_answer": "MF-01",
+      "cheap_answer": "MF-01",
+      "cheap_confidence": 0.74
+    },
+    {
+      "id": "T-014",
+      "text_tokens": 290,
+      "true_answer": "MF-06",
+      "cheap_answer": "MF-06",
+      "cheap_confidence": 0.8
+    },
+    {
+      "id": "T-015",
+      "text_tokens": 280,
+      "true_answer": "MF-01",
+      "cheap_answer": "MF-06",
+      "cheap_confidence": 0.43
+    },
+    {
+      "id": "T-016",
+      "text_tokens": 520,
+      "true_answer": "MF-05",
+      "cheap_answer": "MF-05",
+      "cheap_confidence": 0.96
+    },
+    {
+      "id": "T-017",
+      "text_tokens": 880,
+      "true_answer": "MF-04",
+      "cheap_answer": "MF-04",
+      "cheap_confidence": 0.88
+    },
+    {
+      "id": "T-018",
+      "text_tokens": 250,
+      "true_answer": "MF-01",
+      "cheap_answer": "MF-04",
+      "cheap_confidence": 0.56
+    },
+    {
+      "id": "T-019",
+      "text_tokens": 850,
+      "true_answer": "MF-04",
+      "cheap_answer": "MF-04",
+      "cheap_confidence": 0.91
+    },
+    {
+      "id": "T-020",
+      "text_tokens": 780,
+      "true_answer": "MF-02",
+      "cheap_answer": "MF-02",
+      "cheap_confidence": 0.77
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+# Literally everything a "use my codebase" request can reach.
+meridian/*.py
+tests/*.py
+tools/*.py
+scripts/*.py
+data/*.json
+docs/*.md
+prompts/*.md
+README.md

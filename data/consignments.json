@@ -1,0 +1,1416 @@
+{
+  "consignments": [
+    {
+      "id": "MF-1001",
+      "shipper": {
+        "name": "Ashcroft Mills",
+        "depot": "GAU",
+        "country": "IN"
+      },
+      "consignee": {
+        "name": "Ashcroft Mills",
+        "depot": "AMD",
+        "country": "IN"
+      },
+      "parcels": [
+        {
+          "length_cm": 20,
+          "width_cm": 24,
+          "height_cm": 26,
+          "weight_g": 2500
+        }
+      ],
+      "service": "express",
+      "scope": "domestic",
+      "booked_at": "2026-03-02T16:15:00",
+      "legs": [],
+      "declared_value_minor": 0,
+      "dangerous_goods": false
+    },
+    {
+      "id": "MF-1002",
+      "shipper": {
+        "name": "Dunlin Tools",
+        "depot": "DEL",
+        "country": "IN"
+      },
+      "consignee": {
+        "name": "Thistle Paper",
+        "depot": "AMD",
+        "country": "IN"
+      },
+      "parcels": [
+        {
+          "length_cm": 46,
+          "width_cm": 32,
+          "height_cm": 20,
+          "weight_g": 13500
+        }
+      ],
+      "service": "economy",
+      "scope": "domestic",
+      "booked_at": "2026-03-02T18:45:00",
+      "legs": [
+        {
+          "from_depot": "DEL",
+          "to_depot": "AMD",
+          "depart": "2026-03-02T21:45:00",
+          "arrive": "2026-03-04T20:45:00",
+          "carrier": "MFD-AIR"
+        }
+      ],
+      "declared_value_minor": 0,
+      "dangerous_goods": false
+    },
+    {
+      "id": "MF-1003",
+      "shipper": {
+        "name": "Baragan Steel",
+        "depot": "HYD",
+        "country": "IN"
+      },
+      "consignee": {
+        "name": "Kestrel Optics",
+        "depot": "COK",
+        "country": "IN"
+      },
+      "parcels": [
+        {
+          "length_cm": 48,
+          "width_cm": 36,
+          "height_cm": 36,
+          "weight_g": 6500
+        },
+        {
+          "length_cm": 50,
+          "width_cm": 20,
+          "height_cm": 12,
+          "weight_g": 3800
+        },
+        {
+          "length_cm": 52,
+          "width_cm": 40,
+          "height_cm": 14,
+          "weight_g": 5200
+        }
+      ],
+      "service": "standard",
+      "scope": "domestic",
+      "booked_at": "2025-11-29T14:15:00",
+      "legs": [
+        {
+          "from_depot": "HYD",
+          "to_depot": "COK",
+          "depart": "2026-03-04T17:15:00",
+          "arrive": "2026-03-05T22:15:00",
+          "carrier": "MFD-ROAD"
+        }
+      ],
+      "declared_value_minor": 0,
+      "dangerous_goods": false
+    },
+    {
+      "id": "MF-1004",
+      "shipper": {
+        "name": "Orinoco Spice",
+        "depot": "COK",
+        "country": "IN"
+      },
+      "consignee": {
+        "name": "Ashcroft Mills",
+        "depot": "HYD",
+        "country": "IN"
+      },
+      "parcels": [
+        {
+          "length_cm": 38,
+          "width_cm": 20,
+          "height_cm": 14,
+          "weight_g": 3800
+        },
+        {
+          "length_cm": 40,
+          "width_cm": 28,
+          "height_cm": 12,
+          "weight_g": 5800
+        }
+      ],
+      "service": "economy",
+      "scope": "domestic",
+      "booked_at": "2026-03-03T05:45:00",
+      "legs": [],
+      "declared_value_minor": 0,
+      "dangerous_goods": false
+    },
+    {
+      "id": "MF-1005",
+      "shipper": {
+        "name": "Verity Labs",
+        "depot": "DEL",
+        "country": "IN"
+      },
+      "consignee": {
+        "name": "Thistle Paper",
+        "depot": "MAA",
+        "country": "IN"
+      },
+      "parcels": [
+        {
+          "length_cm": 124,
+          "width_cm": 60,
+          "height_cm": 52,
+          "weight_g": 37000
+        },
+        {
+          "length_cm": 60,
+          "width_cm": 28,
+          "height_cm": 30,
+          "weight_g": 12100
+        }
+      ],
+      "service": "economy",
+      "scope": "domestic",
+      "booked_at": "2026-03-03T08:30:00",
+      "legs": [
+        {
+          "from_depot": "DEL",
+          "to_depot": "MAA",
+          "depart": "2026-03-03T11:30:00",
+          "arrive": "2026-03-04T16:30:00",
+          "carrier": "MFD-AIR"
+        }
+      ],
+      "declared_value_minor": 0,
+      "dangerous_goods": false
+    },
+    {
+      "id": "MF-1006",
+      "shipper": {
+        "name": "Ashcroft Mills",
+        "depot": "AMD",
+        "country": "IN"
+      },
+      "consignee": {
+        "name": "Verity Labs",
+        "depot": "BLR",
+        "country": "IN"
+      },
+      "parcels": [
+        {
+          "length_cm": 58,
+          "width_cm": 18,
+          "height_cm": 14,
+          "weight_g": 6800
+        }
+      ],
+      "service": "economy",
+      "scope": "domestic",
+      "booked_at": "2026-03-03T11:00:00",
+      "legs": [
+        {
+          "from_depot": "AMD",
+          "to_depot": "BLR",
+          "depart": "2026-03-03T14:00:00",
+          "arrive": "2026-03-04T19:00:00",
+          "carrier": "MFD-ROAD"
+        }
+      ],
+      "declared_value_minor": 0,
+      "dangerous_goods": false
+    },
+    {
+      "id": "MF-1007",
+      "shipper": {
+        "name": "Pellam Foods",
+        "depot": "BOM",
+        "country": "IN"
+      },
+      "consignee": {
+        "name": "Kestrel Optics",
+        "depot": "DEL",
+        "country": "IN"
+      },
+      "parcels": [
+        {
+          "length_cm": 28,
+          "width_cm": 46,
+          "height_cm": 36,
+          "weight_g": 4700
+        }
+      ],
+      "service": "economy",
+      "scope": "domestic",
+      "booked_at": "2026-03-03T09:30:00",
+      "legs": [],
+      "declared_value_minor": 790000,
+      "dangerous_goods": false
+    },
+    {
+      "id": "MF-1008",
+      "shipper": {
+        "name": "Baragan Steel",
+        "depot": "CCU",
+        "country": "IN"
+      },
+      "consignee": {
+        "name": "Thistle Paper",
+        "depot": "DEL",
+        "country": "IN"
+      },
+      "parcels": [
+        {
+          "length_cm": 0,
+          "width_cm": 24,
+          "height_cm": 18,
+          "weight_g": 2400
+        }
+      ],
+      "service": "express",
+      "scope": "domestic",
+      "booked_at": "2026-03-04T03:30:00",
+      "legs": [
+        {
+          "from_depot": "CCU",
+          "to_depot": "DEL",
+          "depart": "2026-03-04T06:30:00",
+          "arrive": "2026-03-05T11:30:00",
+          "carrier": "MFD-AIR"
+        }
+      ],
+      "declared_value_minor": 0,
+      "dangerous_goods": false
+    },
+    {
+      "id": "MF-1009",
+      "shipper": {
+        "name": "Ravenna Textiles",
+        "depot": "GAU",
+        "country": "IN"
+      },
+      "consignee": {
+        "name": "Ravenna Textiles",
+        "depot": "AMD",
+        "country": "IN"
+      },
+      "parcels": [
+        {
+          "length_cm": 20,
+          "width_cm": 30,
+          "height_cm": 30,
+          "weight_g": 6500
+        },
+        {
+          "length_cm": 52,
+          "width_cm": 18,
+          "height_cm": 26,
+          "weight_g": 10300
+        }
+      ],
+      "service": "express",
+      "scope": "domestic",
+      "booked_at": "2026-03-04T12:15:00",
+      "legs": [
+        {
+          "from_depot": "GAU",
+          "to_depot": "AMD",
+          "depart": "2026-03-04T15:15:00",
+          "arrive": "2026-03-05T08:15:00",
+          "carrier": "MFD-ROAD"
+        }
+      ],
+      "declared_value_minor": 0,
+      "dangerous_goods": false
+    },
+    {
+      "id": "MF-1010",
+      "shipper": {
+        "name": "Ashcroft Mills",
+        "depot": "COK",
+        "country": "IN"
+      },
+      "consignee": {
+        "name": "Pellam Foods",
+        "depot": "HYD",
+        "country": "IN"
+      },
+      "parcels": [
+        {
+          "length_cm": 24,
+          "width_cm": 40,
+          "height_cm": 14,
+          "weight_g": 3700
+        },
+        {
+          "length_cm": 32,
+          "width_cm": 28,
+          "height_cm": 12,
+          "weight_g": 13200
+        }
+      ],
+      "service": "economy",
+      "scope": "domestic",
+      "booked_at": "2026-03-03T18:30:00",
+      "legs": [],
+      "declared_value_minor": 0,
+      "dangerous_goods": true
+    },
+    {
+      "id": "MF-1011",
+      "shipper": {
+        "name": "Verity Labs",
+        "depot": "COK",
+        "country": "IN"
+      },
+      "consignee": {
+        "name": "Dunlin Tools",
+        "depot": "DEL",
+        "country": "IN"
+      },
+      "parcels": [
+        {
+          "length_cm": 22,
+          "width_cm": 46,
+          "height_cm": 18,
+          "weight_g": 4800
+        }
+      ],
+      "service": "express",
+      "scope": "domestic",
+      "booked_at": "2026-03-02T12:15:00",
+      "legs": [
+        {
+          "from_depot": "COK",
+          "to_depot": "DEL",
+          "depart": "2026-03-02T15:15:00",
+          "arrive": "2026-03-04T14:15:00",
+          "carrier": "MFD-ROAD"
+        }
+      ],
+      "declared_value_minor": 0,
+      "dangerous_goods": false
+    },
+    {
+      "id": "MF-1012",
+      "shipper": {
+        "name": "Harrow & Co",
+        "depot": "BLR",
+        "country": "IN"
+      },
+      "consignee": {
+        "name": "Ashcroft Mills",
+        "depot": "HYD",
+        "country": "IN"
+      },
+      "parcels": [
+        {
+          "length_cm": 42,
+          "width_cm": 36,
+          "height_cm": 22,
+          "weight_g": 8000
+        },
+        {
+          "length_cm": 36,
+          "width_cm": 40,
+          "height_cm": 14,
+          "weight_g": 11000
+        }
+      ],
+      "service": "express",
+      "scope": "domestic",
+      "booked_at": "2026-03-03T06:15:00",
+      "legs": [
+        {
+          "from_depot": "BLR",
+          "to_depot": "HYD",
+          "depart": "2026-03-03T09:15:00",
+          "arrive": "2026-03-05T08:15:00",
+          "carrier": "MFD-AIR"
+        }
+      ],
+      "declared_value_minor": 7790000,
+      "dangerous_goods": false
+    },
+    {
+      "id": "MF-1013",
+      "shipper": {
+        "name": "Ferngate Ceramics",
+        "depot": "AMD",
+        "country": "IN"
+      },
+      "consignee": {
+        "name": "Baragan Steel",
+        "depot": "COK",
+        "country": "IN"
+      },
+      "parcels": [
+        {
+          "length_cm": 42,
+          "width_cm": 34,
+          "height_cm": 10,
+          "weight_g": 6200
+        }
+      ],
+      "service": "express",
+      "scope": "domestic",
+      "booked_at": "2026-03-03T09:45:00",
+      "legs": [],
+      "declared_value_minor": 0,
+      "dangerous_goods": false
+    },
+    {
+      "id": "MF-1014",
+      "shipper": {
+        "name": "Verity Labs",
+        "depot": "AMD",
+        "country": "IN"
+      },
+      "consignee": {
+        "name": "Pellam Foods",
+        "depot": "BLR",
+        "country": "IN"
+      },
+      "parcels": [
+        {
+          "length_cm": 32,
+          "width_cm": 28,
+          "height_cm": 10,
+          "weight_g": 10300
+        },
+        {
+          "length_cm": 40,
+          "width_cm": 30,
+          "height_cm": 32,
+          "weight_g": 800
+        }
+      ],
+      "service": "express",
+      "scope": "domestic",
+      "booked_at": "2026-03-02T14:45:00",
+      "legs": [
+        {
+          "from_depot": "AMD",
+          "to_depot": "BLR",
+          "depart": "2026-03-02T17:45:00",
+          "arrive": "2026-03-03T10:45:00",
+          "carrier": "MFD-AIR"
+        }
+      ],
+      "declared_value_minor": 0,
+      "dangerous_goods": false
+    },
+    {
+      "id": "MF-1015",
+      "shipper": {
+        "name": "Sable Instruments",
+        "depot": "BLR",
+        "country": "IN"
+      },
+      "consignee": {
+        "name": "Pellam Foods",
+        "depot": "MAA",
+        "country": "IN"
+      },
+      "parcels": [
+        {
+          "length_cm": 52,
+          "width_cm": 44,
+          "height_cm": 32,
+          "weight_g": 5500
+        }
+      ],
+      "service": "express",
+      "scope": "domestic",
+      "booked_at": "2026-03-03T14:45:00",
+      "legs": [
+        {
+          "from_depot": "BLR",
+          "to_depot": "MAA",
+          "depart": "2026-03-03T17:45:00",
+          "arrive": "2026-03-04T22:45:00",
+          "carrier": "MFD-AIR"
+        }
+      ],
+      "declared_value_minor": 0,
+      "dangerous_goods": false
+    },
+    {
+      "id": "MF-1016",
+      "shipper": {
+        "name": "Orinoco Spice",
+        "depot": "COK",
+        "country": "IN"
+      },
+      "consignee": {
+        "name": "Ashcroft Mills",
+        "depot": "BLR",
+        "country": "SG"
+      },
+      "parcels": [
+        {
+          "length_cm": 148,
+          "width_cm": 60,
+          "height_cm": 52,
+          "weight_g": 23500
+        }
+      ],
+      "service": "standard",
+      "scope": "export",
+      "booked_at": "2026-03-03T00:30:00",
+      "legs": [],
+      "declared_value_minor": 630000,
+      "dangerous_goods": false
+    },
+    {
+      "id": "MF-1017",
+      "shipper": {
+        "name": "Thistle Paper",
+        "depot": "BOM",
+        "country": "IN"
+      },
+      "consignee": {
+        "name": "Verity Labs",
+        "depot": "MAA",
+        "country": "IN"
+      },
+      "parcels": [
+        {
+          "length_cm": 32,
+          "width_cm": 42,
+          "height_cm": 28,
+          "weight_g": 6600
+        },
+        {
+          "length_cm": 46,
+          "width_cm": 44,
+          "height_cm": 36,
+          "weight_g": 11000
+        }
+      ],
+      "service": "economy",
+      "scope": "domestic",
+      "booked_at": "2026-03-03T03:15:00",
+      "legs": [
+        {
+          "from_depot": "BOM",
+          "to_depot": "MAA",
+          "depart": "2026-03-03T06:15:00",
+          "arrive": "2026-03-05T05:15:00",
+          "carrier": "MFD-AIR"
+        }
+      ],
+      "declared_value_minor": 0,
+      "dangerous_goods": false
+    },
+    {
+      "id": "MF-1018",
+      "shipper": {
+        "name": "Thistle Paper",
+        "depot": "GAU",
+        "country": "IN"
+      },
+      "consignee": {
+        "name": "Harrow & Co",
+        "depot": "BOM",
+        "country": "IN"
+      },
+      "parcels": [
+        {
+          "length_cm": 38,
+          "width_cm": 18,
+          "height_cm": 14,
+          "weight_g": 10400
+        }
+      ],
+      "service": "standard",
+      "scope": "domestic",
+      "booked_at": "2026-03-03T16:45:00",
+      "legs": [
+        {
+          "from_depot": "GAU",
+          "to_depot": "BOM",
+          "depart": "2026-03-03T19:45:00",
+          "arrive": "2026-03-05T00:45:00",
+          "carrier": "MFD-AIR"
+        }
+      ],
+      "declared_value_minor": 0,
+      "dangerous_goods": false
+    },
+    {
+      "id": "MF-1019",
+      "shipper": {
+        "name": "Harrow & Co",
+        "depot": "MAA",
+        "country": "IN"
+      },
+      "consignee": {
+        "name": "Verity Labs",
+        "depot": "GAU",
+        "country": "SG"
+      },
+      "parcels": [
+        {
+          "length_cm": 38,
+          "width_cm": 40,
+          "height_cm": 18,
+          "weight_g": 900
+        }
+      ],
+      "service": "express",
+      "scope": "export",
+      "booked_at": "2026-03-03T15:00:00",
+      "legs": [],
+      "declared_value_minor": 0,
+      "dangerous_goods": false
+    },
+    {
+      "id": "MF-1020",
+      "shipper": {
+        "name": "Sable Instruments",
+        "depot": "COK",
+        "country": "IN"
+      },
+      "consignee": {
+        "name": "Dunlin Tools",
+        "depot": "DEL",
+        "country": "IN"
+      },
+      "parcels": [
+        {
+          "length_cm": 36,
+          "width_cm": 42,
+          "height_cm": 24,
+          "weight_g": 3200
+        }
+      ],
+      "service": "economy",
+      "scope": "domestic",
+      "booked_at": "2026-03-03T22:45:00",
+      "legs": [],
+      "declared_value_minor": 0,
+      "dangerous_goods": true
+    },
+    {
+      "id": "MF-1021",
+      "shipper": {
+        "name": "Ashcroft Mills",
+        "depot": "AMD",
+        "country": "IN"
+      },
+      "consignee": {
+        "name": "Baragan Steel",
+        "depot": "BLR",
+        "country": "IN"
+      },
+      "parcels": [
+        {
+          "length_cm": 58,
+          "width_cm": 40,
+          "height_cm": 24,
+          "weight_g": 13100
+        },
+        {
+          "length_cm": 56,
+          "width_cm": 34,
+          "height_cm": 30,
+          "weight_g": 8200
+        },
+        {
+          "length_cm": 58,
+          "width_cm": 40,
+          "height_cm": 14,
+          "weight_g": 11900
+        }
+      ],
+      "service": "express",
+      "scope": "domestic",
+      "booked_at": "2026-03-04T04:45:00",
+      "legs": [
+        {
+          "from_depot": "AMD",
+          "to_depot": "BLR",
+          "depart": "2026-03-04T07:45:00",
+          "arrive": "2026-03-05T00:45:00",
+          "carrier": "MFD-ROAD"
+        }
+      ],
+      "declared_value_minor": 0,
+      "dangerous_goods": false
+    },
+    {
+      "id": "MF-1022",
+      "shipper": {
+        "name": "Orinoco Spice",
+        "depot": "DEL",
+        "country": "IN"
+      },
+      "consignee": {
+        "name": "Dunlin Tools",
+        "depot": "BOM",
+        "country": "IN"
+      },
+      "parcels": [
+        {
+          "length_cm": 60,
+          "width_cm": 20,
+          "height_cm": 10,
+          "weight_g": 10200
+        },
+        {
+          "length_cm": 54,
+          "width_cm": 32,
+          "height_cm": 28,
+          "weight_g": 7200
+        }
+      ],
+      "service": "standard",
+      "scope": "domestic",
+      "booked_at": "2026-03-04T17:45:00",
+      "legs": [],
+      "declared_value_minor": 785000,
+      "dangerous_goods": false
+    },
+    {
+      "id": "MF-1023",
+      "shipper": {
+        "name": "Ashcroft Mills",
+        "depot": "BLR",
+        "country": "IN"
+      },
+      "consignee": {
+        "name": "Ravenna Textiles",
+        "depot": "HYD",
+        "country": "SG"
+      },
+      "parcels": [
+        {
+          "length_cm": 46,
+          "width_cm": 16,
+          "height_cm": 20,
+          "weight_g": 2000
+        },
+        {
+          "length_cm": 40,
+          "width_cm": 46,
+          "height_cm": 32,
+          "weight_g": 10100
+        }
+      ],
+      "service": "express",
+      "scope": "export",
+      "booked_at": "2026-03-04T11:00:00",
+      "legs": [
+        {
+          "from_depot": "BLR",
+          "to_depot": "HYD",
+          "depart": "2026-03-04T14:00:00",
+          "arrive": "2026-03-05T19:00:00",
+          "carrier": "MFD-ROAD"
+        }
+      ],
+      "declared_value_minor": 0,
+      "dangerous_goods": false
+    },
+    {
+      "id": "MF-1024",
+      "shipper": {
+        "name": "Thistle Paper",
+        "depot": "HYD",
+        "country": "IN"
+      },
+      "consignee": {
+        "name": "Sable Instruments",
+        "depot": "GAU",
+        "country": "SG"
+      },
+      "parcels": [
+        {
+          "length_cm": 0,
+          "width_cm": 24,
+          "height_cm": 18,
+          "weight_g": 2400
+        },
+        {
+          "length_cm": 44,
+          "width_cm": 38,
+          "height_cm": 10,
+          "weight_g": 6400
+        }
+      ],
+      "service": "standard",
+      "scope": "export",
+      "booked_at": "2026-03-02T13:00:00",
+      "legs": [
+        {
+          "from_depot": "HYD",
+          "to_depot": "GAU",
+          "depart": "2026-03-02T16:00:00",
+          "arrive": "2026-03-03T09:00:00",
+          "carrier": "MFD-AIR"
+        }
+      ],
+      "declared_value_minor": 0,
+      "dangerous_goods": false
+    },
+    {
+      "id": "MF-1025",
+      "shipper": {
+        "name": "Sable Instruments",
+        "depot": "MAA",
+        "country": "IN"
+      },
+      "consignee": {
+        "name": "Thistle Paper",
+        "depot": "COK",
+        "country": "IN"
+      },
+      "parcels": [
+        {
+          "length_cm": 52,
+          "width_cm": 28,
+          "height_cm": 32,
+          "weight_g": 5400
+        },
+        {
+          "length_cm": 38,
+          "width_cm": 26,
+          "height_cm": 20,
+          "weight_g": 2300
+        }
+      ],
+      "service": "express",
+      "scope": "domestic",
+      "booked_at": "2026-03-03T17:45:00",
+      "legs": [],
+      "declared_value_minor": 0,
+      "dangerous_goods": false
+    },
+    {
+      "id": "MF-1026",
+      "shipper": {
+        "name": "Pellam Foods",
+        "depot": "COK",
+        "country": "IN"
+      },
+      "consignee": {
+        "name": "Pellam Foods",
+        "depot": "BOM",
+        "country": "SG"
+      },
+      "parcels": [
+        {
+          "length_cm": 40,
+          "width_cm": 22,
+          "height_cm": 12,
+          "weight_g": 7000
+        }
+      ],
+      "service": "standard",
+      "scope": "export",
+      "booked_at": "2026-03-04T16:45:00",
+      "legs": [
+        {
+          "from_depot": "COK",
+          "to_depot": "BOM",
+          "depart": "2026-03-04T19:45:00",
+          "arrive": "2026-03-06T00:45:00",
+          "carrier": "MFD-AIR"
+        }
+      ],
+      "declared_value_minor": 0,
+      "dangerous_goods": false
+    },
+    {
+      "id": "MF-1027",
+      "shipper": {
+        "name": "Sable Instruments",
+        "depot": "BOM",
+        "country": "IN"
+      },
+      "consignee": {
+        "name": "Kestrel Optics",
+        "depot": "DEL",
+        "country": "IN"
+      },
+      "parcels": [
+        {
+          "length_cm": 38,
+          "width_cm": 32,
+          "height_cm": 34,
+          "weight_g": 2700
+        }
+      ],
+      "service": "economy",
+      "scope": "domestic",
+      "booked_at": "2026-03-02T18:00:00",
+      "legs": [
+        {
+          "from_depot": "BOM",
+          "to_depot": "DEL",
+          "depart": "2026-03-02T21:00:00",
+          "arrive": "2026-03-03T14:00:00",
+          "carrier": "MFD-ROAD"
+        }
+      ],
+      "declared_value_minor": 90000,
+      "dangerous_goods": false
+    },
+    {
+      "id": "MF-1028",
+      "shipper": {
+        "name": "Ravenna Textiles",
+        "depot": "COK",
+        "country": "IN"
+      },
+      "consignee": {
+        "name": "Sable Instruments",
+        "depot": "GAU",
+        "country": "IN"
+      },
+      "parcels": [
+        {
+          "length_cm": 38,
+          "width_cm": 24,
+          "height_cm": 22,
+          "weight_g": 8100
+        }
+      ],
+      "service": "economy",
+      "scope": "domestic",
+      "booked_at": "2026-03-04T16:00:00",
+      "legs": [],
+      "declared_value_minor": 480000,
+      "dangerous_goods": false
+    },
+    {
+      "id": "MF-1029",
+      "shipper": {
+        "name": "Ashcroft Mills",
+        "depot": "MAA",
+        "country": "IN"
+      },
+      "consignee": {
+        "name": "Kestrel Optics",
+        "depot": "CCU",
+        "country": "IN"
+      },
+      "parcels": [
+        {
+          "length_cm": 20,
+          "width_cm": 26,
+          "height_cm": 38,
+          "weight_g": 400
+        }
+      ],
+      "service": "economy",
+      "scope": "domestic",
+      "booked_at": "2026-03-04T08:30:00",
+      "legs": [
+        {
+          "from_depot": "MAA",
+          "to_depot": "CCU",
+          "depart": "2026-03-04T11:30:00",
+          "arrive": "2026-03-05T16:30:00",
+          "carrier": "MFD-ROAD"
+        }
+      ],
+      "declared_value_minor": 6220000,
+      "dangerous_goods": false
+    },
+    {
+      "id": "MF-1030",
+      "shipper": {
+        "name": "Sable Instruments",
+        "depot": "BOM",
+        "country": "IN"
+      },
+      "consignee": {
+        "name": "Thistle Paper",
+        "depot": "COK",
+        "country": "IN"
+      },
+      "parcels": [
+        {
+          "length_cm": 20,
+          "width_cm": 24,
+          "height_cm": 26,
+          "weight_g": 10300
+        }
+      ],
+      "service": "standard",
+      "scope": "domestic",
+      "booked_at": "2026-03-02T16:30:00",
+      "legs": [
+        {
+          "from_depot": "BOM",
+          "to_depot": "COK",
+          "depart": "2026-03-02T19:30:00",
+          "arrive": "2026-03-04T00:30:00",
+          "carrier": "MFD-ROAD"
+        }
+      ],
+      "declared_value_minor": 0,
+      "dangerous_goods": false
+    },
+    {
+      "id": "MF-1031",
+      "shipper": {
+        "name": "Baragan Steel",
+        "depot": "MAA",
+        "country": "IN"
+      },
+      "consignee": {
+        "name": "Ferngate Ceramics",
+        "depot": "AMD",
+        "country": "IN"
+      },
+      "parcels": [
+        {
+          "length_cm": 18,
+          "width_cm": 40,
+          "height_cm": 30,
+          "weight_g": 8000
+        }
+      ],
+      "service": "express",
+      "scope": "domestic",
+      "booked_at": "2026-03-03T00:45:00",
+      "legs": [],
+      "declared_value_minor": 0,
+      "dangerous_goods": false
+    },
+    {
+      "id": "MF-1032",
+      "shipper": {
+        "name": "Orinoco Spice",
+        "depot": "GAU",
+        "country": "IN"
+      },
+      "consignee": {
+        "name": "Orinoco Spice",
+        "depot": "AMD",
+        "country": "IN"
+      },
+      "parcels": [
+        {
+          "length_cm": 136,
+          "width_cm": 60,
+          "height_cm": 52,
+          "weight_g": 29000
+        }
+      ],
+      "service": "economy",
+      "scope": "domestic",
+      "booked_at": "2026-03-02T15:00:00",
+      "legs": [
+        {
+          "from_depot": "GAU",
+          "to_depot": "AMD",
+          "depart": "2026-03-02T18:00:00",
+          "arrive": "2026-03-03T23:00:00",
+          "carrier": "MFD-ROAD"
+        }
+      ],
+      "declared_value_minor": 890000,
+      "dangerous_goods": false
+    },
+    {
+      "id": "MF-1033",
+      "shipper": {
+        "name": "Orinoco Spice",
+        "depot": "AMD",
+        "country": "IN"
+      },
+      "consignee": {
+        "name": "Pellam Foods",
+        "depot": "GAU",
+        "country": "IN"
+      },
+      "parcels": [
+        {
+          "length_cm": 56,
+          "width_cm": 34,
+          "height_cm": 30,
+          "weight_g": 9700
+        },
+        {
+          "length_cm": 56,
+          "width_cm": 38,
+          "height_cm": 28,
+          "weight_g": 2000
+        }
+      ],
+      "service": "express",
+      "scope": "domestic",
+      "booked_at": "2026-03-02T13:15:00",
+      "legs": [
+        {
+          "from_depot": "AMD",
+          "to_depot": "GAU",
+          "depart": "2026-03-02T16:15:00",
+          "arrive": "2026-03-03T09:15:00",
+          "carrier": "MFD-ROAD"
+        }
+      ],
+      "declared_value_minor": 180000,
+      "dangerous_goods": false
+    },
+    {
+      "id": "MF-1034",
+      "shipper": {
+        "name": "Baragan Steel",
+        "depot": "MAA",
+        "country": "IN"
+      },
+      "consignee": {
+        "name": "Pellam Foods",
+        "depot": "AMD",
+        "country": "SG"
+      },
+      "parcels": [
+        {
+          "length_cm": 38,
+          "width_cm": 20,
+          "height_cm": 38,
+          "weight_g": 4000
+        }
+      ],
+      "service": "express",
+      "scope": "export",
+      "booked_at": "2026-03-03T14:45:00",
+      "legs": [],
+      "declared_value_minor": 0,
+      "dangerous_goods": true
+    },
+    {
+      "id": "MF-1035",
+      "shipper": {
+        "name": "Orinoco Spice",
+        "depot": "DEL",
+        "country": "IN"
+      },
+      "consignee": {
+        "name": "Sable Instruments",
+        "depot": "GAU",
+        "country": "IN"
+      },
+      "parcels": [
+        {
+          "length_cm": 18,
+          "width_cm": 36,
+          "height_cm": 24,
+          "weight_g": 7400
+        },
+        {
+          "length_cm": 22,
+          "width_cm": 22,
+          "height_cm": 18,
+          "weight_g": 12800
+        }
+      ],
+      "service": "express",
+      "scope": "domestic",
+      "booked_at": "2026-03-04T01:15:00",
+      "legs": [
+        {
+          "from_depot": "DEL",
+          "to_depot": "GAU",
+          "depart": "2026-03-04T04:15:00",
+          "arrive": "2026-03-05T09:15:00",
+          "carrier": "MFD-AIR"
+        }
+      ],
+      "declared_value_minor": 890000,
+      "dangerous_goods": false
+    },
+    {
+      "id": "MF-1036",
+      "shipper": {
+        "name": "Kestrel Optics",
+        "depot": "MAA",
+        "country": "IN"
+      },
+      "consignee": {
+        "name": "Ferngate Ceramics",
+        "depot": "HYD",
+        "country": "IN"
+      },
+      "parcels": [
+        {
+          "length_cm": 30,
+          "width_cm": 18,
+          "height_cm": 10,
+          "weight_g": 4400
+        },
+        {
+          "length_cm": 46,
+          "width_cm": 16,
+          "height_cm": 20,
+          "weight_g": 13700
+        },
+        {
+          "length_cm": 58,
+          "width_cm": 22,
+          "height_cm": 18,
+          "weight_g": 4500
+        }
+      ],
+      "service": "standard",
+      "scope": "domestic",
+      "booked_at": "2026-03-04T15:15:00",
+      "legs": [
+        {
+          "from_depot": "MAA",
+          "to_depot": "HYD",
+          "depart": "2026-03-04T18:15:00",
+          "arrive": "2026-03-05T11:15:00",
+          "carrier": "MFD-AIR"
+        }
+      ],
+      "declared_value_minor": 0,
+      "dangerous_goods": false
+    },
+    {
+      "id": "MF-1037",
+      "shipper": {
+        "name": "Ferngate Ceramics",
+        "depot": "COK",
+        "country": "IN"
+      },
+      "consignee": {
+        "name": "Sable Instruments",
+        "depot": "BLR",
+        "country": "IN"
+      },
+      "parcels": [
+        {
+          "length_cm": 18,
+          "width_cm": 16,
+          "height_cm": 16,
+          "weight_g": 4500
+        }
+      ],
+      "service": "economy",
+      "scope": "domestic",
+      "booked_at": "2026-03-03T18:00:00",
+      "legs": [],
+      "declared_value_minor": 0,
+      "dangerous_goods": false
+    },
+    {
+      "id": "MF-1038",
+      "shipper": {
+        "name": "Dunlin Tools",
+        "depot": "CCU",
+        "country": "IN"
+      },
+      "consignee": {
+        "name": "Sable Instruments",
+        "depot": "BLR",
+        "country": "IN"
+      },
+      "parcels": [
+        {
+          "length_cm": 40,
+          "width_cm": 28,
+          "height_cm": 38,
+          "weight_g": 7400
+        }
+      ],
+      "service": "economy",
+      "scope": "domestic",
+      "booked_at": "2025-11-27T08:15:00",
+      "legs": [
+        {
+          "from_depot": "CCU",
+          "to_depot": "BLR",
+          "depart": "2026-03-02T11:15:00",
+          "arrive": "2026-03-03T16:15:00",
+          "carrier": "MFD-ROAD"
+        }
+      ],
+      "declared_value_minor": 0,
+      "dangerous_goods": false
+    },
+    {
+      "id": "MF-1039",
+      "shipper": {
+        "name": "Harrow & Co",
+        "depot": "BOM",
+        "country": "IN"
+      },
+      "consignee": {
+        "name": "Ashcroft Mills",
+        "depot": "MAA",
+        "country": "IN"
+      },
+      "parcels": [
+        {
+          "length_cm": 54,
+          "width_cm": 14,
+          "height_cm": 10,
+          "weight_g": 9100
+        },
+        {
+          "length_cm": 42,
+          "width_cm": 40,
+          "height_cm": 18,
+          "weight_g": 1800
+        }
+      ],
+      "service": "standard",
+      "scope": "domestic",
+      "booked_at": "2026-03-04T11:30:00",
+      "legs": [
+        {
+          "from_depot": "BOM",
+          "to_depot": "MAA",
+          "depart": "2026-03-04T14:30:00",
+          "arrive": "2026-03-05T19:30:00",
+          "carrier": "MFD-ROAD"
+        }
+      ],
+      "declared_value_minor": 0,
+      "dangerous_goods": false
+    },
+    {
+      "id": "MF-1040",
+      "shipper": {
+        "name": "Kestrel Optics",
+        "depot": "COK",
+        "country": "IN"
+      },
+      "consignee": {
+        "name": "Dunlin Tools",
+        "depot": "BLR",
+        "country": "IN"
+      },
+      "parcels": [
+        {
+          "length_cm": 42,
+          "width_cm": 14,
+          "height_cm": 38,
+          "weight_g": 9700
+        },
+        {
+          "length_cm": 36,
+          "width_cm": 34,
+          "height_cm": 18,
+          "weight_g": 11600
+        },
+        {
+          "length_cm": 24,
+          "width_cm": 44,
+          "height_cm": 20,
+          "weight_g": 11300
+        }
+      ],
+      "service": "express",
+      "scope": "domestic",
+      "booked_at": "2026-03-02T10:15:00",
+      "legs": [],
+      "declared_value_minor": 0,
+      "dangerous_goods": false
+    }
+  ]
+}

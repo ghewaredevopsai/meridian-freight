@@ -1,0 +1,1583 @@
+{
+  "version": "2026.2",
+  "currency": "INR",
+  "effective_from": "2026-01-01",
+  "effective_to": "2026-12-31",
+  "dim_divisor": {
+    "domestic": 5000,
+    "export": 6000
+  },
+  "fuel_pct_by_month": {
+    "2025-01": 13.75,
+    "2025-02": 14.1,
+    "2025-03": 14.45,
+    "2025-04": 13.85,
+    "2025-05": 14.2,
+    "2025-06": 14.55,
+    "2025-07": 13.95,
+    "2025-08": 14.3,
+    "2025-09": 14.65,
+    "2025-10": 14.05,
+    "2025-11": 14.4,
+    "2025-12": 14.75,
+    "2026-01": 14.15,
+    "2026-02": 14.5,
+    "2026-03": 14.85,
+    "2026-04": 14.25,
+    "2026-05": 14.6,
+    "2026-06": 14.95,
+    "2026-07": 14.35,
+    "2026-08": 14.7,
+    "2026-09": 15.05,
+    "2026-10": 14.45,
+    "2026-11": 14.8,
+    "2026-12": 15.15
+  },
+  "surcharges": {
+    "HANDLING": {
+      "label": "Piece handling",
+      "per_piece_minor": 4500
+    },
+    "OVERSIZE": {
+      "label": "Oversize piece",
+      "flat_minor": 78000,
+      "applies_when": "any single dimension over 120 cm or volume over 250000 cm3"
+    },
+    "DG": {
+      "label": "Dangerous goods",
+      "flat_minor": 240000
+    },
+    "REMOTE": {
+      "label": "Remote area delivery",
+      "flat_minor": 56000,
+      "depots": [
+        "GAU"
+      ]
+    },
+    "INSURANCE": {
+      "label": "Declared value cover",
+      "pct_of_declared": 1.15,
+      "minimum_minor": 9000
+    }
+  },
+  "lanes": [
+    {
+      "from": "BOM",
+      "to": "DEL",
+      "zone": "Z3",
+      "transit_hours": 48,
+      "cutoff_local": "15:00",
+      "carrier": "MFD-AIR"
+    },
+    {
+      "from": "BOM",
+      "to": "BLR",
+      "zone": "Z2",
+      "transit_hours": 30,
+      "cutoff_local": "17:30",
+      "carrier": "MFD-ROAD"
+    },
+    {
+      "from": "BOM",
+      "to": "MAA",
+      "zone": "Z3",
+      "transit_hours": 48,
+      "cutoff_local": "15:00",
+      "carrier": "MFD-AIR"
+    },
+    {
+      "from": "BOM",
+      "to": "CCU",
+      "zone": "Z3",
+      "transit_hours": 48,
+      "cutoff_local": "15:00",
+      "carrier": "MFD-AIR"
+    },
+    {
+      "from": "BOM",
+      "to": "HYD",
+      "zone": "Z2",
+      "transit_hours": 30,
+      "cutoff_local": "17:30",
+      "carrier": "MFD-ROAD"
+    },
+    {
+      "from": "BOM",
+      "to": "AMD",
+      "zone": "Z1",
+      "transit_hours": 18,
+      "cutoff_local": "17:30",
+      "carrier": "MFD-ROAD"
+    },
+    {
+      "from": "BOM",
+      "to": "GAU",
+      "zone": "Z4",
+      "transit_hours": 72,
+      "cutoff_local": "15:00",
+      "carrier": "MFD-AIR"
+    },
+    {
+      "from": "BOM",
+      "to": "COK",
+      "zone": "Z2",
+      "transit_hours": 30,
+      "cutoff_local": "17:30",
+      "carrier": "MFD-ROAD"
+    },
+    {
+      "from": "DEL",
+      "to": "BOM",
+      "zone": "Z3",
+      "transit_hours": 48,
+      "cutoff_local": "15:00",
+      "carrier": "MFD-AIR"
+    },
+    {
+      "from": "DEL",
+      "to": "BLR",
+      "zone": "Z3",
+      "transit_hours": 48,
+      "cutoff_local": "15:00",
+      "carrier": "MFD-AIR"
+    },
+    {
+      "from": "DEL",
+      "to": "MAA",
+      "zone": "Z3",
+      "transit_hours": 48,
+      "cutoff_local": "15:00",
+      "carrier": "MFD-AIR"
+    },
+    {
+      "from": "DEL",
+      "to": "CCU",
+      "zone": "Z3",
+      "transit_hours": 48,
+      "cutoff_local": "15:00",
+      "carrier": "MFD-AIR"
+    },
+    {
+      "from": "DEL",
+      "to": "HYD",
+      "zone": "Z3",
+      "transit_hours": 48,
+      "cutoff_local": "15:00",
+      "carrier": "MFD-AIR"
+    },
+    {
+      "from": "DEL",
+      "to": "AMD",
+      "zone": "Z2",
+      "transit_hours": 30,
+      "cutoff_local": "17:30",
+      "carrier": "MFD-ROAD"
+    },
+    {
+      "from": "DEL",
+      "to": "GAU",
+      "zone": "Z3",
+      "transit_hours": 48,
+      "cutoff_local": "15:00",
+      "carrier": "MFD-AIR"
+    },
+    {
+      "from": "DEL",
+      "to": "COK",
+      "zone": "Z3",
+      "transit_hours": 48,
+      "cutoff_local": "15:00",
+      "carrier": "MFD-AIR"
+    },
+    {
+      "from": "BLR",
+      "to": "BOM",
+      "zone": "Z2",
+      "transit_hours": 30,
+      "cutoff_local": "17:30",
+      "carrier": "MFD-ROAD"
+    },
+    {
+      "from": "BLR",
+      "to": "DEL",
+      "zone": "Z3",
+      "transit_hours": 48,
+      "cutoff_local": "15:00",
+      "carrier": "MFD-AIR"
+    },
+    {
+      "from": "BLR",
+      "to": "MAA",
+      "zone": "Z1",
+      "transit_hours": 18,
+      "cutoff_local": "17:30",
+      "carrier": "MFD-ROAD"
+    },
+    {
+      "from": "BLR",
+      "to": "CCU",
+      "zone": "Z3",
+      "transit_hours": 48,
+      "cutoff_local": "15:00",
+      "carrier": "MFD-AIR"
+    },
+    {
+      "from": "BLR",
+      "to": "HYD",
+      "zone": "Z1",
+      "transit_hours": 18,
+      "cutoff_local": "17:30",
+      "carrier": "MFD-ROAD"
+    },
+    {
+      "from": "BLR",
+      "to": "AMD",
+      "zone": "Z3",
+      "transit_hours": 48,
+      "cutoff_local": "15:00",
+      "carrier": "MFD-AIR"
+    },
+    {
+      "from": "BLR",
+      "to": "GAU",
+      "zone": "Z4",
+      "transit_hours": 72,
+      "cutoff_local": "15:00",
+      "carrier": "MFD-AIR"
+    },
+    {
+      "from": "BLR",
+      "to": "COK",
+      "zone": "Z1",
+      "transit_hours": 18,
+      "cutoff_local": "17:30",
+      "carrier": "MFD-ROAD"
+    },
+    {
+      "from": "MAA",
+      "to": "BOM",
+      "zone": "Z3",
+      "transit_hours": 48,
+      "cutoff_local": "15:00",
+      "carrier": "MFD-AIR"
+    },
+    {
+      "from": "MAA",
+      "to": "DEL",
+      "zone": "Z3",
+      "transit_hours": 48,
+      "cutoff_local": "15:00",
+      "carrier": "MFD-AIR"
+    },
+    {
+      "from": "MAA",
+      "to": "BLR",
+      "zone": "Z1",
+      "transit_hours": 18,
+      "cutoff_local": "17:30",
+      "carrier": "MFD-ROAD"
+    },
+    {
+      "from": "MAA",
+      "to": "CCU",
+      "zone": "Z3",
+      "transit_hours": 48,
+      "cutoff_local": "15:00",
+      "carrier": "MFD-AIR"
+    },
+    {
+      "from": "MAA",
+      "to": "HYD",
+      "zone": "Z1",
+      "transit_hours": 18,
+      "cutoff_local": "17:30",
+      "carrier": "MFD-ROAD"
+    },
+    {
+      "from": "MAA",
+      "to": "AMD",
+      "zone": "Z3",
+      "transit_hours": 48,
+      "cutoff_local": "15:00",
+      "carrier": "MFD-AIR"
+    },
+    {
+      "from": "MAA",
+      "to": "GAU",
+      "zone": "Z4",
+      "transit_hours": 72,
+      "cutoff_local": "15:00",
+      "carrier": "MFD-AIR"
+    },
+    {
+      "from": "MAA",
+      "to": "COK",
+      "zone": "Z2",
+      "transit_hours": 30,
+      "cutoff_local": "17:30",
+      "carrier": "MFD-ROAD"
+    },
+    {
+      "from": "CCU",
+      "to": "BOM",
+      "zone": "Z3",
+      "transit_hours": 48,
+      "cutoff_local": "15:00",
+      "carrier": "MFD-AIR"
+    },
+    {
+      "from": "CCU",
+      "to": "DEL",
+      "zone": "Z3",
+      "transit_hours": 48,
+      "cutoff_local": "15:00",
+      "carrier": "MFD-AIR"
+    },
+    {
+      "from": "CCU",
+      "to": "BLR",
+      "zone": "Z3",
+      "transit_hours": 48,
+      "cutoff_local": "15:00",
+      "carrier": "MFD-AIR"
+    },
+    {
+      "from": "CCU",
+      "to": "MAA",
+      "zone": "Z3",
+      "transit_hours": 48,
+      "cutoff_local": "15:00",
+      "carrier": "MFD-AIR"
+    },
+    {
+      "from": "CCU",
+      "to": "HYD",
+      "zone": "Z3",
+      "transit_hours": 48,
+      "cutoff_local": "15:00",
+      "carrier": "MFD-AIR"
+    },
+    {
+      "from": "CCU",
+      "to": "AMD",
+      "zone": "Z3",
+      "transit_hours": 48,
+      "cutoff_local": "15:00",
+      "carrier": "MFD-AIR"
+    },
+    {
+      "from": "CCU",
+      "to": "GAU",
+      "zone": "Z2",
+      "transit_hours": 30,
+      "cutoff_local": "17:30",
+      "carrier": "MFD-ROAD"
+    },
+    {
+      "from": "CCU",
+      "to": "COK",
+      "zone": "Z4",
+      "transit_hours": 72,
+      "cutoff_local": "15:00",
+      "carrier": "MFD-AIR"
+    },
+    {
+      "from": "HYD",
+      "to": "BOM",
+      "zone": "Z2",
+      "transit_hours": 30,
+      "cutoff_local": "17:30",
+      "carrier": "MFD-ROAD"
+    },
+    {
+      "from": "HYD",
+      "to": "DEL",
+      "zone": "Z3",
+      "transit_hours": 48,
+      "cutoff_local": "15:00",
+      "carrier": "MFD-AIR"
+    },
+    {
+      "from": "HYD",
+      "to": "BLR",
+      "zone": "Z1",
+      "transit_hours": 18,
+      "cutoff_local": "17:30",
+      "carrier": "MFD-ROAD"
+    },
+    {
+      "from": "HYD",
+      "to": "MAA",
+      "zone": "Z1",
+      "transit_hours": 18,
+      "cutoff_local": "17:30",
+      "carrier": "MFD-ROAD"
+    },
+    {
+      "from": "HYD",
+      "to": "CCU",
+      "zone": "Z3",
+      "transit_hours": 48,
+      "cutoff_local": "15:00",
+      "carrier": "MFD-AIR"
+    },
+    {
+      "from": "HYD",
+      "to": "AMD",
+      "zone": "Z2",
+      "transit_hours": 30,
+      "cutoff_local": "17:30",
+      "carrier": "MFD-ROAD"
+    },
+    {
+      "from": "HYD",
+      "to": "GAU",
+      "zone": "Z4",
+      "transit_hours": 72,
+      "cutoff_local": "15:00",
+      "carrier": "MFD-AIR"
+    },
+    {
+      "from": "HYD",
+      "to": "COK",
+      "zone": "Z2",
+      "transit_hours": 30,
+      "cutoff_local": "17:30",
+      "carrier": "MFD-ROAD"
+    },
+    {
+      "from": "AMD",
+      "to": "BOM",
+      "zone": "Z1",
+      "transit_hours": 18,
+      "cutoff_local": "17:30",
+      "carrier": "MFD-ROAD"
+    },
+    {
+      "from": "AMD",
+      "to": "DEL",
+      "zone": "Z2",
+      "transit_hours": 30,
+      "cutoff_local": "17:30",
+      "carrier": "MFD-ROAD"
+    },
+    {
+      "from": "AMD",
+      "to": "BLR",
+      "zone": "Z3",
+      "transit_hours": 48,
+      "cutoff_local": "15:00",
+      "carrier": "MFD-AIR"
+    },
+    {
+      "from": "AMD",
+      "to": "MAA",
+      "zone": "Z3",
+      "transit_hours": 48,
+      "cutoff_local": "15:00",
+      "carrier": "MFD-AIR"
+    },
+    {
+      "from": "AMD",
+      "to": "CCU",
+      "zone": "Z3",
+      "transit_hours": 48,
+      "cutoff_local": "15:00",
+      "carrier": "MFD-AIR"
+    },
+    {
+      "from": "AMD",
+      "to": "HYD",
+      "zone": "Z2",
+      "transit_hours": 30,
+      "cutoff_local": "17:30",
+      "carrier": "MFD-ROAD"
+    },
+    {
+      "from": "AMD",
+      "to": "GAU",
+      "zone": "Z4",
+      "transit_hours": 72,
+      "cutoff_local": "15:00",
+      "carrier": "MFD-AIR"
+    },
+    {
+      "from": "AMD",
+      "to": "COK",
+      "zone": "Z3",
+      "transit_hours": 48,
+      "cutoff_local": "15:00",
+      "carrier": "MFD-AIR"
+    },
+    {
+      "from": "GAU",
+      "to": "BOM",
+      "zone": "Z4",
+      "transit_hours": 72,
+      "cutoff_local": "15:00",
+      "carrier": "MFD-AIR"
+    },
+    {
+      "from": "GAU",
+      "to": "DEL",
+      "zone": "Z3",
+      "transit_hours": 48,
+      "cutoff_local": "15:00",
+      "carrier": "MFD-AIR"
+    },
+    {
+      "from": "GAU",
+      "to": "BLR",
+      "zone": "Z4",
+      "transit_hours": 72,
+      "cutoff_local": "15:00",
+      "carrier": "MFD-AIR"
+    },
+    {
+      "from": "GAU",
+      "to": "MAA",
+      "zone": "Z4",
+      "transit_hours": 72,
+      "cutoff_local": "15:00",
+      "carrier": "MFD-AIR"
+    },
+    {
+      "from": "GAU",
+      "to": "CCU",
+      "zone": "Z2",
+      "transit_hours": 30,
+      "cutoff_local": "17:30",
+      "carrier": "MFD-ROAD"
+    },
+    {
+      "from": "GAU",
+      "to": "HYD",
+      "zone": "Z4",
+      "transit_hours": 72,
+      "cutoff_local": "15:00",
+      "carrier": "MFD-AIR"
+    },
+    {
+      "from": "GAU",
+      "to": "AMD",
+      "zone": "Z4",
+      "transit_hours": 72,
+      "cutoff_local": "15:00",
+      "carrier": "MFD-AIR"
+    },
+    {
+      "from": "GAU",
+      "to": "COK",
+      "zone": "Z4",
+      "transit_hours": 72,
+      "cutoff_local": "15:00",
+      "carrier": "MFD-AIR"
+    },
+    {
+      "from": "COK",
+      "to": "BOM",
+      "zone": "Z2",
+      "transit_hours": 30,
+      "cutoff_local": "17:30",
+      "carrier": "MFD-ROAD"
+    },
+    {
+      "from": "COK",
+      "to": "DEL",
+      "zone": "Z3",
+      "transit_hours": 48,
+      "cutoff_local": "15:00",
+      "carrier": "MFD-AIR"
+    },
+    {
+      "from": "COK",
+      "to": "BLR",
+      "zone": "Z1",
+      "transit_hours": 18,
+      "cutoff_local": "17:30",
+      "carrier": "MFD-ROAD"
+    },
+    {
+      "from": "COK",
+      "to": "MAA",
+      "zone": "Z2",
+      "transit_hours": 30,
+      "cutoff_local": "17:30",
+      "carrier": "MFD-ROAD"
+    },
+    {
+      "from": "COK",
+      "to": "CCU",
+      "zone": "Z4",
+      "transit_hours": 72,
+      "cutoff_local": "15:00",
+      "carrier": "MFD-AIR"
+    },
+    {
+      "from": "COK",
+      "to": "HYD",
+      "zone": "Z2",
+      "transit_hours": 30,
+      "cutoff_local": "17:30",
+      "carrier": "MFD-ROAD"
+    },
+    {
+      "from": "COK",
+      "to": "AMD",
+      "zone": "Z3",
+      "transit_hours": 48,
+      "cutoff_local": "15:00",
+      "carrier": "MFD-AIR"
+    },
+    {
+      "from": "COK",
+      "to": "GAU",
+      "zone": "Z4",
+      "transit_hours": 72,
+      "cutoff_local": "15:00",
+      "carrier": "MFD-AIR"
+    }
+  ],
+  "rates": {
+    "domestic": {
+      "economy": {
+        "zones": {
+          "Z1": [
+            {
+              "up_to_g": 1000,
+              "minor": 12480
+            },
+            {
+              "up_to_g": 2000,
+              "minor": 19344
+            },
+            {
+              "up_to_g": 4000,
+              "minor": 29983
+            },
+            {
+              "up_to_g": 8000,
+              "minor": 46473
+            },
+            {
+              "up_to_g": 16000,
+              "minor": 72033
+            },
+            {
+              "up_to_g": 24000,
+              "minor": 111651
+            },
+            {
+              "up_to_g": 32000,
+              "minor": 173059
+            },
+            {
+              "up_to_g": 40000,
+              "minor": 268241
+            },
+            {
+              "up_to_g": null,
+              "per_kg_minor": 5241
+            }
+          ],
+          "Z2": [
+            {
+              "up_to_g": 1000,
+              "minor": 15600
+            },
+            {
+              "up_to_g": 2000,
+              "minor": 24180
+            },
+            {
+              "up_to_g": 4000,
+              "minor": 37479
+            },
+            {
+              "up_to_g": 8000,
+              "minor": 58092
+            },
+            {
+              "up_to_g": 16000,
+              "minor": 90042
+            },
+            {
+              "up_to_g": 24000,
+              "minor": 139565
+            },
+            {
+              "up_to_g": 32000,
+              "minor": 216325
+            },
+            {
+              "up_to_g": 40000,
+              "minor": 335303
+            },
+            {
+              "up_to_g": null,
+              "per_kg_minor": 6552
+            }
+          ],
+          "Z3": [
+            {
+              "up_to_g": 1000,
+              "minor": 19968
+            },
+            {
+              "up_to_g": 2000,
+              "minor": 30950
+            },
+            {
+              "up_to_g": 4000,
+              "minor": 47972
+            },
+            {
+              "up_to_g": 8000,
+              "minor": 74356
+            },
+            {
+              "up_to_g": 16000,
+              "minor": 115251
+            },
+            {
+              "up_to_g": 24000,
+              "minor": 178639
+            },
+            {
+              "up_to_g": 32000,
+              "minor": 276890
+            },
+            {
+              "up_to_g": 40000,
+              "minor": 429179
+            },
+            {
+              "up_to_g": null,
+              "per_kg_minor": 8386
+            }
+          ],
+          "Z4": [
+            {
+              "up_to_g": 1000,
+              "minor": 25583
+            },
+            {
+              "up_to_g": 2000,
+              "minor": 39653
+            },
+            {
+              "up_to_g": 4000,
+              "minor": 61462
+            },
+            {
+              "up_to_g": 8000,
+              "minor": 95266
+            },
+            {
+              "up_to_g": 16000,
+              "minor": 147662
+            },
+            {
+              "up_to_g": 24000,
+              "minor": 228876
+            },
+            {
+              "up_to_g": 32000,
+              "minor": 354757
+            },
+            {
+              "up_to_g": 40000,
+              "minor": 549873
+            },
+            {
+              "up_to_g": null,
+              "per_kg_minor": 10744
+            }
+          ]
+        }
+      },
+      "standard": {
+        "zones": {
+          "Z1": [
+            {
+              "up_to_g": 1000,
+              "minor": 16000
+            },
+            {
+              "up_to_g": 2000,
+              "minor": 24800
+            },
+            {
+              "up_to_g": 4000,
+              "minor": 38440
+            },
+            {
+              "up_to_g": 8000,
+              "minor": 59582
+            },
+            {
+              "up_to_g": 16000,
+              "minor": 92352
+            },
+            {
+              "up_to_g": 24000,
+              "minor": 143145
+            },
+            {
+              "up_to_g": 32000,
+              "minor": 221874
+            },
+            {
+              "up_to_g": 40000,
+              "minor": 343904
+            },
+            {
+              "up_to_g": null,
+              "per_kg_minor": 6720
+            }
+          ],
+          "Z2": [
+            {
+              "up_to_g": 1000,
+              "minor": 20000
+            },
+            {
+              "up_to_g": 2000,
+              "minor": 31000
+            },
+            {
+              "up_to_g": 4000,
+              "minor": 48050
+            },
+            {
+              "up_to_g": 8000,
+              "minor": 74477
+            },
+            {
+              "up_to_g": 16000,
+              "minor": 115439
+            },
+            {
+              "up_to_g": 24000,
+              "minor": 178930
+            },
+            {
+              "up_to_g": 32000,
+              "minor": 277341
+            },
+            {
+              "up_to_g": 40000,
+              "minor": 429878
+            },
+            {
+              "up_to_g": null,
+              "per_kg_minor": 8400
+            }
+          ],
+          "Z3": [
+            {
+              "up_to_g": 1000,
+              "minor": 25600
+            },
+            {
+              "up_to_g": 2000,
+              "minor": 39680
+            },
+            {
+              "up_to_g": 4000,
+              "minor": 61504
+            },
+            {
+              "up_to_g": 8000,
+              "minor": 95331
+            },
+            {
+              "up_to_g": 16000,
+              "minor": 147763
+            },
+            {
+              "up_to_g": 24000,
+              "minor": 229032
+            },
+            {
+              "up_to_g": 32000,
+              "minor": 354999
+            },
+            {
+              "up_to_g": 40000,
+              "minor": 550248
+            },
+            {
+              "up_to_g": null,
+              "per_kg_minor": 10752
+            }
+          ],
+          "Z4": [
+            {
+              "up_to_g": 1000,
+              "minor": 32800
+            },
+            {
+              "up_to_g": 2000,
+              "minor": 50840
+            },
+            {
+              "up_to_g": 4000,
+              "minor": 78802
+            },
+            {
+              "up_to_g": 8000,
+              "minor": 122143
+            },
+            {
+              "up_to_g": 16000,
+              "minor": 189321
+            },
+            {
+              "up_to_g": 24000,
+              "minor": 293447
+            },
+            {
+              "up_to_g": 32000,
+              "minor": 454842
+            },
+            {
+              "up_to_g": 40000,
+              "minor": 705005
+            },
+            {
+              "up_to_g": null,
+              "per_kg_minor": 13776
+            }
+          ]
+        }
+      },
+      "express": {
+        "zones": {
+          "Z1": [
+            {
+              "up_to_g": 1000,
+              "minor": 26240
+            },
+            {
+              "up_to_g": 2000,
+              "minor": 40672
+            },
+            {
+              "up_to_g": 4000,
+              "minor": 63041
+            },
+            {
+              "up_to_g": 8000,
+              "minor": 97713
+            },
+            {
+              "up_to_g": 16000,
+              "minor": 151455
+            },
+            {
+              "up_to_g": 24000,
+              "minor": 234755
+            },
+            {
+              "up_to_g": 32000,
+              "minor": 363870
+            },
+            {
+              "up_to_g": 40000,
+              "minor": 563998
+            },
+            {
+              "up_to_g": null,
+              "per_kg_minor": 11020
+            }
+          ],
+          "Z2": [
+            {
+              "up_to_g": 1000,
+              "minor": 32800
+            },
+            {
+              "up_to_g": 2000,
+              "minor": 50840
+            },
+            {
+              "up_to_g": 4000,
+              "minor": 78802
+            },
+            {
+              "up_to_g": 8000,
+              "minor": 122143
+            },
+            {
+              "up_to_g": 16000,
+              "minor": 189321
+            },
+            {
+              "up_to_g": 24000,
+              "minor": 293447
+            },
+            {
+              "up_to_g": 32000,
+              "minor": 454842
+            },
+            {
+              "up_to_g": 40000,
+              "minor": 705005
+            },
+            {
+              "up_to_g": null,
+              "per_kg_minor": 13776
+            }
+          ],
+          "Z3": [
+            {
+              "up_to_g": 1000,
+              "minor": 41984
+            },
+            {
+              "up_to_g": 2000,
+              "minor": 65075
+            },
+            {
+              "up_to_g": 4000,
+              "minor": 100866
+            },
+            {
+              "up_to_g": 8000,
+              "minor": 156342
+            },
+            {
+              "up_to_g": 16000,
+              "minor": 242330
+            },
+            {
+              "up_to_g": 24000,
+              "minor": 375611
+            },
+            {
+              "up_to_g": 32000,
+              "minor": 582197
+            },
+            {
+              "up_to_g": 40000,
+              "minor": 902405
+            },
+            {
+              "up_to_g": null,
+              "per_kg_minor": 17633
+            }
+          ],
+          "Z4": [
+            {
+              "up_to_g": 1000,
+              "minor": 53791
+            },
+            {
+              "up_to_g": 2000,
+              "minor": 83376
+            },
+            {
+              "up_to_g": 4000,
+              "minor": 129232
+            },
+            {
+              "up_to_g": 8000,
+              "minor": 200309
+            },
+            {
+              "up_to_g": 16000,
+              "minor": 310478
+            },
+            {
+              "up_to_g": 24000,
+              "minor": 481240
+            },
+            {
+              "up_to_g": 32000,
+              "minor": 745922
+            },
+            {
+              "up_to_g": 40000,
+              "minor": 1156179
+            },
+            {
+              "up_to_g": null,
+              "per_kg_minor": 22592
+            }
+          ]
+        }
+      }
+    },
+    "export": {
+      "economy": {
+        "zones": {
+          "Z1": [
+            {
+              "up_to_g": 1000,
+              "minor": 29328
+            },
+            {
+              "up_to_g": 2000,
+              "minor": 45458
+            },
+            {
+              "up_to_g": 4000,
+              "minor": 70459
+            },
+            {
+              "up_to_g": 8000,
+              "minor": 109211
+            },
+            {
+              "up_to_g": 16000,
+              "minor": 169277
+            },
+            {
+              "up_to_g": 24000,
+              "minor": 262379
+            },
+            {
+              "up_to_g": 32000,
+              "minor": 406687
+            },
+            {
+              "up_to_g": 40000,
+              "minor": 630364
+            },
+            {
+              "up_to_g": null,
+              "per_kg_minor": 12317
+            }
+          ],
+          "Z2": [
+            {
+              "up_to_g": 1000,
+              "minor": 36660
+            },
+            {
+              "up_to_g": 2000,
+              "minor": 56823
+            },
+            {
+              "up_to_g": 4000,
+              "minor": 88075
+            },
+            {
+              "up_to_g": 8000,
+              "minor": 136516
+            },
+            {
+              "up_to_g": 16000,
+              "minor": 211599
+            },
+            {
+              "up_to_g": 24000,
+              "minor": 327978
+            },
+            {
+              "up_to_g": 32000,
+              "minor": 508365
+            },
+            {
+              "up_to_g": 40000,
+              "minor": 787965
+            },
+            {
+              "up_to_g": null,
+              "per_kg_minor": 15397
+            }
+          ],
+          "Z3": [
+            {
+              "up_to_g": 1000,
+              "minor": 46924
+            },
+            {
+              "up_to_g": 2000,
+              "minor": 72732
+            },
+            {
+              "up_to_g": 4000,
+              "minor": 112734
+            },
+            {
+              "up_to_g": 8000,
+              "minor": 174737
+            },
+            {
+              "up_to_g": 16000,
+              "minor": 270842
+            },
+            {
+              "up_to_g": 24000,
+              "minor": 419805
+            },
+            {
+              "up_to_g": 32000,
+              "minor": 650697
+            },
+            {
+              "up_to_g": 40000,
+              "minor": 1008580
+            },
+            {
+              "up_to_g": null,
+              "per_kg_minor": 19708
+            }
+          ],
+          "Z4": [
+            {
+              "up_to_g": 1000,
+              "minor": 60122
+            },
+            {
+              "up_to_g": 2000,
+              "minor": 93189
+            },
+            {
+              "up_to_g": 4000,
+              "minor": 144442
+            },
+            {
+              "up_to_g": 8000,
+              "minor": 223885
+            },
+            {
+              "up_to_g": 16000,
+              "minor": 347021
+            },
+            {
+              "up_to_g": 24000,
+              "minor": 537882
+            },
+            {
+              "up_to_g": 32000,
+              "minor": 833717
+            },
+            {
+              "up_to_g": 40000,
+              "minor": 1292261
+            },
+            {
+              "up_to_g": null,
+              "per_kg_minor": 25251
+            }
+          ]
+        }
+      },
+      "standard": {
+        "zones": {
+          "Z1": [
+            {
+              "up_to_g": 1000,
+              "minor": 37600
+            },
+            {
+              "up_to_g": 2000,
+              "minor": 58280
+            },
+            {
+              "up_to_g": 4000,
+              "minor": 90334
+            },
+            {
+              "up_to_g": 8000,
+              "minor": 140017
+            },
+            {
+              "up_to_g": 16000,
+              "minor": 217026
+            },
+            {
+              "up_to_g": 24000,
+              "minor": 336390
+            },
+            {
+              "up_to_g": 32000,
+              "minor": 521404
+            },
+            {
+              "up_to_g": 40000,
+              "minor": 808176
+            },
+            {
+              "up_to_g": null,
+              "per_kg_minor": 15792
+            }
+          ],
+          "Z2": [
+            {
+              "up_to_g": 1000,
+              "minor": 47000
+            },
+            {
+              "up_to_g": 2000,
+              "minor": 72850
+            },
+            {
+              "up_to_g": 4000,
+              "minor": 112917
+            },
+            {
+              "up_to_g": 8000,
+              "minor": 175021
+            },
+            {
+              "up_to_g": 16000,
+              "minor": 271282
+            },
+            {
+              "up_to_g": 24000,
+              "minor": 420487
+            },
+            {
+              "up_to_g": 32000,
+              "minor": 651754
+            },
+            {
+              "up_to_g": 40000,
+              "minor": 1010218
+            },
+            {
+              "up_to_g": null,
+              "per_kg_minor": 19740
+            }
+          ],
+          "Z3": [
+            {
+              "up_to_g": 1000,
+              "minor": 60160
+            },
+            {
+              "up_to_g": 2000,
+              "minor": 93248
+            },
+            {
+              "up_to_g": 4000,
+              "minor": 144534
+            },
+            {
+              "up_to_g": 8000,
+              "minor": 224027
+            },
+            {
+              "up_to_g": 16000,
+              "minor": 347241
+            },
+            {
+              "up_to_g": 24000,
+              "minor": 538223
+            },
+            {
+              "up_to_g": 32000,
+              "minor": 834245
+            },
+            {
+              "up_to_g": 40000,
+              "minor": 1293079
+            },
+            {
+              "up_to_g": null,
+              "per_kg_minor": 25267
+            }
+          ],
+          "Z4": [
+            {
+              "up_to_g": 1000,
+              "minor": 77080
+            },
+            {
+              "up_to_g": 2000,
+              "minor": 119474
+            },
+            {
+              "up_to_g": 4000,
+              "minor": 185184
+            },
+            {
+              "up_to_g": 8000,
+              "minor": 287035
+            },
+            {
+              "up_to_g": 16000,
+              "minor": 444904
+            },
+            {
+              "up_to_g": 24000,
+              "minor": 689601
+            },
+            {
+              "up_to_g": 32000,
+              "minor": 1068881
+            },
+            {
+              "up_to_g": 40000,
+              "minor": 1656765
+            },
+            {
+              "up_to_g": null,
+              "per_kg_minor": 32373
+            }
+          ]
+        }
+      },
+      "express": {
+        "zones": {
+          "Z1": [
+            {
+              "up_to_g": 1000,
+              "minor": 61663
+            },
+            {
+              "up_to_g": 2000,
+              "minor": 95577
+            },
+            {
+              "up_to_g": 4000,
+              "minor": 148144
+            },
+            {
+              "up_to_g": 8000,
+              "minor": 229623
+            },
+            {
+              "up_to_g": 16000,
+              "minor": 355915
+            },
+            {
+              "up_to_g": 24000,
+              "minor": 551668
+            },
+            {
+              "up_to_g": 32000,
+              "minor": 855085
+            },
+            {
+              "up_to_g": 40000,
+              "minor": 1325381
+            },
+            {
+              "up_to_g": null,
+              "per_kg_minor": 25898
+            }
+          ],
+          "Z2": [
+            {
+              "up_to_g": 1000,
+              "minor": 77079
+            },
+            {
+              "up_to_g": 2000,
+              "minor": 119472
+            },
+            {
+              "up_to_g": 4000,
+              "minor": 185181
+            },
+            {
+              "up_to_g": 8000,
+              "minor": 287030
+            },
+            {
+              "up_to_g": 16000,
+              "minor": 444896
+            },
+            {
+              "up_to_g": 24000,
+              "minor": 689588
+            },
+            {
+              "up_to_g": 32000,
+              "minor": 1068861
+            },
+            {
+              "up_to_g": 40000,
+              "minor": 1656734
+            },
+            {
+              "up_to_g": null,
+              "per_kg_minor": 32373
+            }
+          ],
+          "Z3": [
+            {
+              "up_to_g": 1000,
+              "minor": 98662
+            },
+            {
+              "up_to_g": 2000,
+              "minor": 152926
+            },
+            {
+              "up_to_g": 4000,
+              "minor": 237035
+            },
+            {
+              "up_to_g": 8000,
+              "minor": 367404
+            },
+            {
+              "up_to_g": 16000,
+              "minor": 569476
+            },
+            {
+              "up_to_g": 24000,
+              "minor": 882687
+            },
+            {
+              "up_to_g": 32000,
+              "minor": 1368164
+            },
+            {
+              "up_to_g": 40000,
+              "minor": 2120654
+            },
+            {
+              "up_to_g": null,
+              "per_kg_minor": 41438
+            }
+          ],
+          "Z4": [
+            {
+              "up_to_g": 1000,
+              "minor": 126411
+            },
+            {
+              "up_to_g": 2000,
+              "minor": 195937
+            },
+            {
+              "up_to_g": 4000,
+              "minor": 303702
+            },
+            {
+              "up_to_g": 8000,
+              "minor": 470738
+            },
+            {
+              "up_to_g": 16000,
+              "minor": 729643
+            },
+            {
+              "up_to_g": 24000,
+              "minor": 1130946
+            },
+            {
+              "up_to_g": 32000,
+              "minor": 1752966
+            },
+            {
+              "up_to_g": 40000,
+              "minor": 2717097
+            },
+            {
+              "up_to_g": null,
+              "per_kg_minor": 53092
+            }
+          ]
+        }
+      }
+    }
+  }
+}

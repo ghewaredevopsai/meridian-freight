@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.DS_Store
+Thumbs.db
+.vscode/settings.json
+
+# Lab output: participants commit their own record sheets, not each other's
+lab-*-record.md
+answer*.json
