@@ -58,6 +58,11 @@
       "label": "Declared value cover",
       "pct_of_declared": 1.15,
       "minimum_minor": 9000
+    },
+    "SAT": {
+      "label": "Saturday collection",
+      "flat_minor": 32000,
+      "applies_when": "booked for collection on a Saturday; domestic only"
     }
   },
   "lanes": [

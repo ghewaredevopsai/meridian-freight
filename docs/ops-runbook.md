@@ -60,6 +60,21 @@ from the band below it up to but *not including* 2000 g. A parcel of exactly 200
 prices in the next band up. Ask anyone who has argued with a customer about a
 2.000 kg parcel why this is written down.
 
+## Saturday collections
+
+A consignment collected on a Saturday carries a flat **Saturday collection**
+surcharge, code `SAT`, of 32000 paise. Flat, not a percentage &mdash; the driver
+costs the same whatever is in the box.
+
+It is a surcharge like any other, so it goes in **before** fuel.
+
+**Export is excluded.** We do not collect export freight on Saturdays at all, so a
+Saturday export booking is a data error rather than a chargeable collection, and it
+must not pick up the surcharge.
+
+A consignment is a Saturday collection when `booked_at` falls on a Saturday. As
+everywhere else, that is the booking's own timestamp &mdash; not today.
+
 ## Charging order
 
 Base rate, then surcharges, then fuel **on the sum of the two**.
