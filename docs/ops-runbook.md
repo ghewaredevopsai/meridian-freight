@@ -28,14 +28,16 @@ the desk "fix" unrouted consignments constantly and it is always wrong.
 
 ## Money
 
-Every amount in the system is an **integer number of paise**. There is no rounding
-decision to make in the middle of a calculation because there are no fractions: you
-only ever divide when you are splitting a total across pieces, and `split_evenly()`
-does that, guaranteeing the pieces add back to the original.
+Every amount in the system is an **integer number of paise**. A percentage &mdash;
+fuel, insurance &mdash; is applied in basis points and floored to the whole paisa,
+once, in `rating.quote()`. The only other division is splitting a total across
+pieces, and `split_evenly()` does that, guaranteeing the pieces add back to the
+original.
 
-Halves in that function round **to even**, not away from zero. Over a quarter of
-manifest splits, rounding halves up drifts the depot's takings above the invoiced
-total by a few hundred rupees, and reconciliation then has to find it.
+That function does not round at all. It hands the remainder out one paisa at a time
+to the first pieces. Rounding each piece on its own instead &mdash; half up, half to
+even, any rule &mdash; drifts the depot's takings away from the invoiced total by a
+few hundred rupees a quarter, and reconciliation then has to find it.
 
 Never put an amount in a float. Not to display it, not "just for the report", not
 temporarily. The only place a decimal point appears is `cli.money()`, on the way to
@@ -115,10 +117,7 @@ There are six. There have been six since the desk opened.
 
 The downstream billing feed rejects any code it does not recognise, and a rejected
 batch is a morning of somebody's life. A new code is a conversation with the billing
-team, not a new string typed at a call site. They live in `meridian/validate.py`,
-and the summary report deliberately prints all six every day including the ones at
-zero &mdash; a code that quietly stops appearing looks exactly like a code nobody is
-checking any more.
+team, not a new string typed at a call site. They live in `meridian/validate.py`.
 
 ## Tariff dates
 

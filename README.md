@@ -7,7 +7,7 @@ Python 3.11+. **Standard library only** &mdash; nothing to install, and it runs 
 no network.
 
 ```bash
-python3 -m unittest discover -s tests -t .     # 27 tests
+python3 -m unittest discover -s tests -t .     # 28 tests
 python3 -m meridian quote MF-1004
 python3 -m meridian route MF-1004
 python3 -m meridian exceptions

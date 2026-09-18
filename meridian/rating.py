@@ -73,7 +73,7 @@ def _surcharges(consignment: Consignment, tariff: dict) -> list[Charge]:
     if consignment.declared_value_minor > 0:
         ins = tariffs.surcharge(tariff, "INSURANCE")
         pct = ins["pct_of_declared"]
-        amount = (consignment.declared_value_minor * int(pct * 100)) // 10_000
+        amount = (consignment.declared_value_minor * round(pct * 100)) // 10_000
         out.append(Charge("INSURANCE", ins["label"], max(amount, ins["minimum_minor"])))
 
     return out
@@ -104,7 +104,7 @@ def quote(consignment: Consignment, tariff: dict | None = None) -> Quote:
 
     subtotal = sum(c.amount_minor for c in charges)
     pct = tariffs.fuel_pct(tariff, consignment.booked_at)
-    fuel = (subtotal * int(pct * 100)) // 10_000
+    fuel = (subtotal * round(pct * 100)) // 10_000
     charges.append(Charge("FUEL", f"Fuel {pct}%", fuel))
 
     return Quote(
@@ -119,8 +119,8 @@ def quote(consignment: Consignment, tariff: dict | None = None) -> Quote:
 def split_evenly(total_minor: int, parts: int) -> list[int]:
     """Split an amount across parts so the pieces add back to the total.
 
-    Halves round to even, so a long run of splits does not drift upward. The
-    remainder goes to the earliest parts, one minor unit each.
+    Nothing is rounded: the remainder goes to the earliest parts, one minor unit
+    each, so a long run of splits cannot drift above or below the totals.
     """
     if parts <= 0:
         raise RatingError("cannot split across zero parts")

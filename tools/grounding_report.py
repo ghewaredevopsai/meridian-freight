@@ -6,11 +6,17 @@
 
 Meters the three ways of grounding the same question:
 
-    A  everything          the whole repository
+    A  everything          the whole repository, as cloned
     B  two files           rating.py and manifest.py
-    C  the rule            the Charging order lines, plus the failing test output
+    C  the rule            the Charging order section, the fuel lines from both
+                           files, and the failing test output
 
-It generates the files C needs. **It cannot tell you whether each answer named the
+It generates the three files C needs.  C carries the rule AND the code it governs,
+so a C answer that names the drift has matched one to the other - not just read the
+rule back. C shows no surcharges, so it cannot find the two that manifest.py omits.
+
+A counts the files git tracks, so your own lab files do not inflate it and everyone's
+figure matches. With no git, it falls back to every file in the folder. **It cannot tell you whether each answer named the
 fuel drift** - that is the column the lab is about, and the one you fill in.
 
 Measure first, then send. Knowing the ratio before you see the answers is what stops
@@ -34,8 +40,26 @@ def meter(paths) -> int:
                for p in paths if p.is_file())
 
 
+FUEL_LINES = {
+    "meridian/rating.py": ("subtotal = sum(", "fuel = (", "total_minor="),
+    "meridian/manifest.py": ("fuel = (", "return base + fuel"),
+}
+
+
+def tracked() -> list[Path]:
+    """The repository as cloned: git's file list, or the folder if there is no git."""
+    r = subprocess.run(["git", "ls-files"], capture_output=True, text=True, cwd=REPO)
+    if r.returncode == 0 and r.stdout.strip():
+        files = [REPO / line for line in r.stdout.splitlines()]
+    else:
+        files = [p for p in sorted(REPO.rglob("*")) if ".git" not in p.parts]
+    return [p for p in files if p.is_file()
+            and p.suffix in {".py", ".json", ".md", ".txt"}
+            and p.name not in {"six-lines.txt", "fuel-lines.txt", "failing-test.txt"}]
+
+
 def build_c() -> list[Path]:
-    """Cut C is the runbook rule plus the failing test output; make both."""
+    """Cut C is the runbook rule, the fuel lines it governs, and the failing test."""
     six = REPO / "six-lines.txt"
     if not six.exists():
         text = (REPO / "docs" / "ops-runbook.md").read_text(encoding="utf-8")
@@ -54,21 +78,30 @@ def build_c() -> list[Path]:
         r = subprocess.run([sys.executable, "-m", "unittest", "tests.test_manifest", "-v"],
                            capture_output=True, text=True, cwd=REPO)
         tail = (r.stderr or r.stdout).strip().splitlines()[-12:]
+        tail = [line.replace(str(REPO) + "/", "") for line in tail]
         failing.write_text("\n".join(tail) + "\n", encoding="utf-8")
-    return [six, failing]
+
+    fuel = REPO / "fuel-lines.txt"
+    if not fuel.exists():
+        out = []
+        for rel, starts in FUEL_LINES.items():
+            out.append(f"# {rel}")
+            for line in (REPO / rel).read_text(encoding="utf-8").splitlines():
+                if line.strip().startswith(starts):
+                    out.append(line.strip())
+            out.append("")
+        fuel.write_text("\n".join(out), encoding="utf-8")
+    return [six, fuel, failing]
 
 
 def main() -> int:
-    everything = [p for p in sorted(REPO.rglob("*"))
-                  if p.is_file() and ".git" not in p.parts
-                  and p.suffix in {".py", ".json", ".md", ".txt"}
-                  and "six-lines" not in p.name and "failing-test" not in p.name]
+    everything = tracked()
     two = [REPO / "meridian" / "rating.py", REPO / "meridian" / "manifest.py"]
     rule = build_c()
 
     rows = [("A", "everything", "the whole repository", meter(everything)),
             ("B", "two files", "rating.py + manifest.py", meter(two)),
-            ("C", "the rule", "six-lines.txt + failing-test.txt", meter(rule))]
+            ("C", "the rule", "rule + fuel lines + failing test", meter(rule))]
     smallest = min(t for *_, t in rows)
 
     print()
@@ -79,7 +112,8 @@ def main() -> int:
         print("%-3s %-12s %-34s %10d %8.0fx   %s"
               % (label, name, what, tokens, tokens / smallest, "___"))
     print()
-    print("  C's files are ready: six-lines.txt and failing-test.txt - paste those, attach nothing.")
+    print("  C's files are ready: six-lines.txt, fuel-lines.txt and failing-test.txt -")
+    print("  paste those three, attach nothing.")
     print("  the last column is yours. it is the whole lab.")
     print()
 
@@ -90,7 +124,7 @@ def main() -> int:
                                                              missing surcharges?
 A: everything          %-18d ___                ___
 B: two files           %-18d ___                ___
-C: the rule            %-18d ___                ___
+C: the rule            %-18d ___                n/a - C shows no surcharges
 
 Ratio of A to C: %.0f times the context.
 Which gave the most useful answer? ______
@@ -98,7 +132,7 @@ Which gave the most useful answer? ______
 If A lost, what did it spend its attention on instead?
 ____________________________________________________________
 """ % (rows[0][3], rows[1][3], rows[2][3], rows[0][3] / rows[2][3]), encoding="utf-8")
-        print("  wrote lab-4-record.md - fill in the two yes/no columns and the last question")
+        print("  wrote lab-4-record.md - fill in the yes/no columns and the last two questions")
         print()
     return 0
 

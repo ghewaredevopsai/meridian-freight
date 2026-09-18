@@ -86,6 +86,12 @@ class Quoting(unittest.TestCase):
         q = rating.quote(consignment(declared_value_minor=10_000), self.tariff)
         self.assertEqual(q.charge("INSURANCE").amount_minor, 9000)
 
+    def test_insurance_is_the_full_percentage_of_declared_value(self):
+        # 1.15% of 62,200.00 is 715.30. 1.15 * 100 is 114.999... as a float, so
+        # truncating it instead of rounding it bills 1.14%.
+        q = rating.quote(consignment(declared_value_minor=6_220_000), self.tariff)
+        self.assertEqual(q.charge("INSURANCE").amount_minor, 71_530)
+
     def test_money_is_only_ever_whole_minor_units(self):
         q = rating.quote(consignment(declared_value_minor=123_457), self.tariff)
         for charge in q.charges:
