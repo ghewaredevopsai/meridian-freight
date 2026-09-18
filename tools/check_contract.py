@@ -95,6 +95,15 @@ def main(argv: list[str] | None = None) -> int:
     path = Path(argv[0])
     if not path.exists():
         print(f"check_contract: no such file: {path}")
+        print()
+        print("  This reads a file - it cannot see your chat window. Put the model's")
+        print("  reply in a file first. In a terminal:")
+        print()
+        print(f"      cat > {path}")
+        print("      <paste the reply, then press Enter and Ctrl-D>")
+        print()
+        print("  Or save it from your editor. Paste the reply exactly as it came back,")
+        print("  fence and all - whether the fence is there is part of what is measured.")
         return 2
 
     problems = check(path.read_text(encoding="utf-8"))
