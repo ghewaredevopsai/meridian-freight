@@ -38,6 +38,8 @@ dist/
 answer*.json
 answer*.txt
 six-lines.txt
+exceptions.txt
+prompt-*.txt
 
 # Editors and OS
 .vscode/settings.json
