@@ -1,11 +1,46 @@
+# Meridian Freight Desk
+#
+# Participants clone this repo and work in it, so this file has two jobs: keep the
+# usual Python noise out, and stay out of the way of the things the labs tell people
+# to commit.
+#
+# DO NOT add lab-*-record.md, prompt-check.md, .github/ or tools/bundles/*.txt here.
+# Every lab ends with `git add lab-N-record.md && git commit` - the record sheet is
+# the deliverable - and Labs 3 and 5 commit a bundle file and a check file too.
+
+# Python
 __pycache__/
 *.py[cod]
+*$py.class
+
+# Virtual environments
 .venv/
 venv/
+env/
+ENV/
+
+# Test and tool caches. The suite is unittest and needs nothing installed, but
+# people reach for pytest and coverage out of habit.
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Packaging, in case someone adds a pyproject and builds
+*.egg-info/
+build/
+dist/
+
+# Lab scratch: raw model output saved to check the contract (Prompt & Context Lab 2)
+# and the pasted-lines file from Lab 4. Neither is worth keeping or comparing.
+answer*.json
+answer*.txt
+six-lines.txt
+
+# Editors and OS
+.vscode/settings.json
+.idea/
 .DS_Store
 Thumbs.db
-.vscode/settings.json
-
-# Lab output: participants commit their own record sheets, not each other's
-lab-*-record.md
-answer*.json
