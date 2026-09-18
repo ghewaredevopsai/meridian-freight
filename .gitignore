@@ -39,6 +39,7 @@ answer*.json
 answer*.txt
 answer.delimited
 six-lines.txt
+failing-test.txt
 exceptions.txt
 prompt-*.txt
 
