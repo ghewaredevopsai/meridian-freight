@@ -37,6 +37,7 @@ dist/
 # and the pasted-lines file from Lab 4. Neither is worth keeping or comparing.
 answer*.json
 answer*.txt
+answer.delimited
 six-lines.txt
 exceptions.txt
 prompt-*.txt
