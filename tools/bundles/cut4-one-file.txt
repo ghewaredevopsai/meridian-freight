@@ -1,0 +1,2 @@
+# Cut 4: deliberately too far - one file, no rule, nothing to compare against.
+meridian/manifest.py

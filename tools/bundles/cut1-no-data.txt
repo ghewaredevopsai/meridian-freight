@@ -1,0 +1,4 @@
+# Cut 1: the same attachment set, minus the two large data files.
+meridian/*.py
+docs/*.md
+tests/*.py

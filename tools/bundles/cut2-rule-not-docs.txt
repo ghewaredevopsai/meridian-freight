@@ -1,0 +1,6 @@
+# Cut 2: the code, plus only the runbook lines that decide the answer.
+# six-lines.txt is generated in the lab:
+#   sed -n '/^## Charging order/,/^## Clocks/p' docs/ops-runbook.md > six-lines.txt
+meridian/*.py
+tests/*.py
+six-lines.txt
